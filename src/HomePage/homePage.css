@@ -1,0 +1,60 @@
+@font-face {
+  font-family: Libre Franklin;
+  src: url(/home/marv/react-projects/strength-shop/src/HomePage/LibreFranklin-Regular.ttf);
+}
+
+body {
+  font-family: Libre Franklin, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--font-size-body);
+  width: 100%;
+  color: #333;
+  margin: 0;
+}
+
+:root {
+  --jdgm-primary-color: #94140a;
+  --jdgm-secondary-color: #333;
+  --jdgm-star-color: #ffc700;
+  --jdgm-paginate-color: #333333;
+  --jdgm-border-radius: 0;
+}
+
+:root {
+  --color-body-text: #333333;
+  --color-body: #ffffff;
+  --color-bg: #ffffff;
+}
+
+:root {
+  --font-size-heading-large: 1.9375rem;
+  --font-size-heading-medium: 1.6875rem;
+  --font-size-heading-1: 1.5625rem;
+  --font-size-heading-2: 1.5rem;
+  --font-size-heading-3: 1.375rem;
+  --font-size-heading-4: 1.125rem;
+  --font-size-heading-5: 1rem;
+  --font-size-heading-6: 1rem;
+  --font-size-body-larger: 1.375rem;
+  --font-size-body-large: 1.25rem;
+  --font-size-body-medium: 1.125rem;
+  --font-size-body: 1rem;
+  --font-size-body-small: 0.9375rem;
+  --font-size-body-smaller: 0.875rem;
+  --font-size-body-smallest: 0.8125rem;
+  --font-size-body-tiny: 0.75rem;
+  --font-size-button-small: 0.8125rem;
+  --font-size-button-medium: 0.875rem;
+  --font-size-button-large: 1.0625rem;
+  --font-size-button-x-large: 1.1875rem;
+  --font-size-menu-large: 1.0625rem;
+  --font-size-menu: 0.9375rem;
+  --font-size-input: 1rem;
+  --font-size-section-heading: 1.125rem;
+  --font-size-menu-body-medium: 0.90625rem;
+  --font-size-menu-body-small: 0.875rem;
+  --font-size-heading-body-small: 0.8125rem;
+  --font-size-heading-body-smaller: 0.75rem;
+  --font-size-heading-slideshow: 1.8671875rem;
+}
