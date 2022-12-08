@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import HomePage from "./HomePage/HomePage";
+import HomePage from "./HomePage/Main/HomePage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

@@ -3,20 +3,30 @@ import "/home/marv/react-projects/strength-shop/src/HomePage/CurrencyBar/currenc
 
 export default function CurrencyBar() {
   const [country, setCountry] = useState(false);
-  const [buttonText, setButtonText] = useState('United Kingdom (GBP £)');
+  const [buttonText, setButtonText] = useState("United Kingdom (GBP £)");
   const wrapperRef = useRef(null);
   ClickOutside(wrapperRef);
+  /* ref to stop useEffect conflicting with popup click function */
+  const reff = useRef(null);
 
   /* dropdown menu */
   function Dropdown() {
-    setCountry(true);
+    if (country === false) {
+      setCountry(true);
+    } else {
+      setCountry(false);
+    }
   }
 
   /* dropdown menu removal */
   function ClickOutside(ref) {
     useEffect(() => {
       function handleClickOutside(event) {
-        if (ref.current && !ref.current.contains(event.target)) {
+        if (
+          ref.current &&
+          !ref.current.contains(event.target) &&
+          !reff.current.contains(event.target)
+        ) {
           setCountry(false);
         }
       }
@@ -34,15 +44,15 @@ export default function CurrencyBar() {
 
   return (
     <div className="currency-bar">
-      <button onClick={Dropdown} className="country">
+      <button ref={reff} onClick={Dropdown} className="country">
         {buttonText}
         <span>
-          <i class="arrow down"></i>
+          <i className="arrow down"></i>
         </span>
       </button>
 
       {country ? (
-        <div ref={wrapperRef} class="dropdown-content">
+        <div ref={wrapperRef} className="dropdown-content">
           <ul>
             <li onClick={handleClick}>Austrailia (AUD &#36;)</li>
             <li onClick={handleClick}>Belgium (EUR &euro;)</li>

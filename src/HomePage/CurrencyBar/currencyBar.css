@@ -41,6 +41,7 @@ button {
 /* dropdown content */
 .dropdown-content {
   position: absolute;
+  background: #fff;
   overflow-y: scroll;
   right: 13.8%;
   top: 4%;

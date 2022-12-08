@@ -1,0 +1,130 @@
+.menus {
+  padding-top: 0.1em;
+  display: flex;
+  align-items: center;
+}
+.hov {
+  text-decoration: none;
+  margin-bottom: 0.6em;
+  padding: 0.8em 1em 0.7em 0em;
+  color: #fff;
+  font-weight: 900;
+  text-shadow: 0.01rem 0 #fff;
+  font-size: var(--font-size-menu);
+}
+.pad {
+  padding: 0.62em 1.1em 0.8em 1.1em;
+  text-decoration: none;
+  margin-bottom: 0.4em;
+  color: #fff;
+  font-weight: 900;
+  text-shadow: 0.01rem 0 #fff;
+  font-size: var(--font-size-menu);
+}
+.menus summary {
+  list-style: none;
+  width: fit-content;
+  padding: 0.62em 1.1em 0.8em 1.1em;
+  color: #fff;
+  text-shadow: 0.01rem 0 #fff;
+  font-weight: 900;
+  font-size: var(--font-size-menu);
+}
+.menus details summary:hover {
+  cursor: pointer;
+  background-color: rgb(216, 215, 215);
+  color: #333;
+}
+.hov:hover {
+  color: rgb(216, 215, 215);
+}
+.pad:hover {
+  color: rgb(216, 215, 215);
+}
+
+/* arrows */
+.arrow-menu {
+  border: solid #fff;
+  border-width: 0 0.124rem 0.124rem 0;
+  display: inline-block;
+  padding: 0.13em;
+}
+.down-menu {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+summary span {
+  margin-left: 0.5em;
+  vertical-align: 0.22em;
+}
+summary:hover .arrow-menu {
+  border-color: #333;
+}
+
+/* hover menu dropdown styling */
+summary {
+  margin-bottom: 0.6em;
+}
+details li {
+  list-style: none;
+  padding: 0.45rem 2rem 0.45rem 1.5625rem;
+  cursor: pointer;
+}
+details li:hover {
+  background-color: rgb(216, 215, 215);
+}
+details ul {
+  background-color: #fff;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+details a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+/* dropdown placement */
+.dropdown1 {
+  margin-top: 0.02em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 15.2em;
+  left: 5.7em;
+}
+.dropdown2 {
+  margin-top: 0.02em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 15.5em;
+  left: 16.5em;
+}
+.dropdown3 {
+  margin-top: 0.02em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 15.5em;
+  left: 25em;
+}
+.dropdown4 {
+  margin-top: 0.02em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 15.5em;
+  left: 35em;
+}
+.dropdown5 {
+  margin-top: 0.02em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 15.5em;
+  left: 44.7em;
+}
+.dropdown6 {
+  margin-top: 0.02em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 15.5em;
+  left: 60.8em;
+}
