@@ -5,50 +5,78 @@ export default function Menus() {
   /* dropdown 1 */
   const [isHovered, setIsHovered] = useState(false);
   const ref = useRef(null);
-  const handleMouseOver = () => setIsHovered(true);
-  const handleMouseOut = () => setIsHovered(false);
 
   /* dropdown 2 */
   const [isHovered2, setIsHovered2] = useState(false);
   const ref2 = useRef(null);
-  const handleMouseOver2 = () => setIsHovered2(true);
-  const handleMouseOut2 = () => setIsHovered2(false);
 
   /* dropdown 3 */
   const [isHovered3, setIsHovered3] = useState(false);
   const ref3 = useRef(null);
-  const handleMouseOver3 = () => setIsHovered3(true);
-  const handleMouseOut3 = () => setIsHovered3(false);
 
   /* dropdown 4 */
   const [isHovered4, setIsHovered4] = useState(false);
   const ref4 = useRef(null);
-  const handleMouseOver4 = () => setIsHovered4(true);
-  const handleMouseOut4 = () => setIsHovered4(false);
 
   /* dropdown 5 */
   const [isHovered5, setIsHovered5] = useState(false);
   const ref5 = useRef(null);
-  const handleMouseOver5 = () => setIsHovered5(true);
-  const handleMouseOut5 = () => setIsHovered5(false);
 
   /* dropdown 6 */
   const [isHovered6, setIsHovered6] = useState(false);
   const ref6 = useRef(null);
-  const handleMouseOver6 = () => setIsHovered6(true);
-  const handleMouseOut6 = () => setIsHovered6(false);
+
+  /* submenu dropdown */
+  const [subMenu, setSubMenu] = useState(false);
+  const refMenu = useRef(null);
+
+  /* submenu hover dropdown */
+  useEffect(() => {
+    const node = refMenu.current;
+
+    function func() {
+      setTimeout(function () {
+        setSubMenu(false);
+      }, 600);
+    }
+
+    function func2() {
+      setSubMenu(true);
+    }
+
+    if (node) {
+      node.addEventListener("mouseenter", func2);
+      node.addEventListener("mouseleave", func);
+
+      return () => {
+        node.addEventListener("mouseenter", func2);
+        node.addEventListener("mouseleave", func);
+      };
+    }
+  }, []);
 
   /* hover for dropdown 1 */
   useEffect(() => {
     const node = ref.current;
 
+    function func() {
+      setTimeout(function () {
+        setIsHovered(false);
+      }, 600);
+    }
+
+    function func2() {
+      setTimeout(function () {
+        setIsHovered(true);
+      }, 300);
+    }
     if (node) {
-      node.addEventListener("mouseover", handleMouseOver);
-      node.addEventListener("mouseout", handleMouseOut);
+      node.addEventListener("mouseenter", func2);
+      node.addEventListener("mouseleave", func);
 
       return () => {
-        node.addEventListener("mouseover", handleMouseOver);
-        node.addEventListener("mouseout", handleMouseOut);
+        node.addEventListener("mouseenter", func2);
+        node.addEventListener("mouseleave", func);
       };
     }
   }, []);
@@ -57,13 +85,24 @@ export default function Menus() {
   useEffect(() => {
     const node = ref2.current;
 
+    function func() {
+      setTimeout(function () {
+        setIsHovered2(false);
+      }, 600);
+    }
+
+    function func2() {
+      setTimeout(function () {
+        setIsHovered2(true);
+      }, 300);
+    }
     if (node) {
-      node.addEventListener("mouseover", handleMouseOver2);
-      node.addEventListener("mouseout", handleMouseOut2);
+      node.addEventListener("mouseenter", func2);
+      node.addEventListener("mouseleave", func);
 
       return () => {
-        node.addEventListener("mouseover", handleMouseOver2);
-        node.addEventListener("mouseout", handleMouseOut2);
+        node.addEventListener("mouseenter", func2);
+        node.addEventListener("mouseleave", func);
       };
     }
   }, []);
@@ -72,13 +111,25 @@ export default function Menus() {
   useEffect(() => {
     const node = ref3.current;
 
+    function func() {
+      setTimeout(function () {
+        setIsHovered3(false);
+      }, 600);
+    }
+
+    function func2() {
+      setTimeout(function () {
+        setIsHovered3(true);
+      }, 300);
+    }
+
     if (node) {
-      node.addEventListener("mouseover", handleMouseOver3);
-      node.addEventListener("mouseout", handleMouseOut3);
+      node.addEventListener("mouseenter", func2);
+      node.addEventListener("mouseleave", func);
 
       return () => {
-        node.addEventListener("mouseover", handleMouseOver3);
-        node.addEventListener("mouseout", handleMouseOut3);
+        node.addEventListener("mouseenter", func2);
+        node.addEventListener("mouseleave", func);
       };
     }
   }, []);
@@ -87,28 +138,50 @@ export default function Menus() {
   useEffect(() => {
     const node = ref4.current;
 
+    function func() {
+      setTimeout(function () {
+        setIsHovered4(false);
+      }, 600);
+    }
+
+    function func2() {
+      setTimeout(function () {
+        setIsHovered4(true);
+      }, 300);
+    }
     if (node) {
-      node.addEventListener("mouseover", handleMouseOver4);
-      node.addEventListener("mouseout", handleMouseOut4);
+      node.addEventListener("mouseenter", func2);
+      node.addEventListener("mouseleave", func);
 
       return () => {
-        node.addEventListener("mouseover", handleMouseOver4);
-        node.addEventListener("mouseout", handleMouseOut4);
+        node.addEventListener("mouseenter", func2);
+        node.addEventListener("mouseleave", func);
       };
     }
   }, []);
 
-  /* hover for dropdown 3 */
+  /* hover for dropdown 5 */
   useEffect(() => {
     const node = ref5.current;
 
+    function func() {
+      setTimeout(function () {
+        setIsHovered5(false);
+      }, 600);
+    }
+
+    function func2() {
+      setTimeout(function () {
+        setIsHovered5(true);
+      }, 300);
+    }
     if (node) {
-      node.addEventListener("mouseover", handleMouseOver5);
-      node.addEventListener("mouseout", handleMouseOut5);
+      node.addEventListener("mouseenter", func2);
+      node.addEventListener("mouseleave", func);
 
       return () => {
-        node.addEventListener("mouseover", handleMouseOver5);
-        node.addEventListener("mouseout", handleMouseOut5);
+        node.addEventListener("mouseenter", func2);
+        node.addEventListener("mouseleave", func);
       };
     }
   }, []);
@@ -117,19 +190,30 @@ export default function Menus() {
   useEffect(() => {
     const node = ref6.current;
 
+    function func() {
+      setTimeout(function () {
+        setIsHovered6(false);
+      }, 600);
+    }
+
+    function func2() {
+      setTimeout(function () {
+        setIsHovered6(true);
+      }, 200);
+    }
     if (node) {
-      node.addEventListener("mouseover", handleMouseOver6);
-      node.addEventListener("mouseout", handleMouseOut6);
+      node.addEventListener("mouseenter", func2);
+      node.addEventListener("mouseleave", func);
 
       return () => {
-        node.addEventListener("mouseover", handleMouseOver6);
-        node.addEventListener("mouseout", handleMouseOut6);
+        node.addEventListener("mouseenter", func2);
+        node.addEventListener("mouseleave", func);
       };
     }
   }, []);
 
   return (
-    <div className="menus">
+    <div className="menus shade">
       {/* 1 */}
       <a className="hov" href={"sale"}>
         XMAS SALE
@@ -222,9 +306,34 @@ export default function Menus() {
           </span>
         </summary>
         <ul className="dropdown3" ref={ref3}>
-          <li>
-            <a href={"weights"}>Belts</a>
-          </li>
+          <div ref={refMenu}>
+            <li className="menuPadding">
+              <a href={"weights"}>
+                Belts{" "}
+                <span>
+                  <i className="arrow-menu2 down-menu2"></i>
+                </span>
+              </a>
+            </li>
+            {subMenu ? (
+              <ul className="subMenu">
+                <li>
+                  <a href="weights">
+                    Single & Double Prong <br /> Buckle Belts
+                  </a>
+                </li>
+                <li>
+                  <a href="weights">Lever Buckle Belts</a>
+                </li>
+                <li>
+                  <a href="weights">Velcro/Webbing Belts</a>
+                </li>
+                <li>
+                  <a href="weights">Dipping Belts</a>
+                </li>
+              </ul>
+            ) : null}
+          </div>
           <li>
             <a href={"weights"}>Knee Sleeves</a>
           </li>
