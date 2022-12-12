@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
-import logo from "/home/marv/react-projects/strength-shop/src/HomePage/NavBar/logo.avif";
+import logo from "/home/marv/react-projects/strength-shop/src/HomePage/NavBar/Images/logo.avif";
 import "/home/marv/react-projects/strength-shop/src/HomePage/NavBar/NavbarCss/Searchbar.css";
-import searchIcon from "/home/marv/react-projects/strength-shop/src/HomePage/NavBar/search-icon.png";
-import magnifierIcon from "/home/marv/react-projects/strength-shop/src/HomePage/NavBar/magnifier.png";
+import searchIcon from "/home/marv/react-projects/strength-shop/src/HomePage/NavBar/Images/search-icon.png";
+import magnifierIcon from "/home/marv/react-projects/strength-shop/src/HomePage/NavBar/Images/magnifier.png";
 
 export default function Search() {
   const [suggestions, setSuggestions] = useState(false);

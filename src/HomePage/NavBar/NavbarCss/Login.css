@@ -1,0 +1,19 @@
+.login a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+  font-size: var(--font-size-menu);
+  text-shadow: 0.01rem 0 #fff;
+  display: flex;
+  align-items: center;
+}
+
+.user-image {
+  max-height: 1.5em;
+  padding-right: 0.4em;
+}
+.login {
+  display: flex;
+  padding-left: 5em;
+  padding-top: 0.4em;
+}

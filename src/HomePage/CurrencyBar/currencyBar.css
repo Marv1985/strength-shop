@@ -2,10 +2,13 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  margin-left: 0.5em;
 }
-
+.country {
+  color: #3f3f3f;
+}
 .country:hover {
-  color: #333333;
+  color: #6e6d6d;
   cursor: pointer;
 }
 .country,

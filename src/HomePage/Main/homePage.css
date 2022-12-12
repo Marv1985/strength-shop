@@ -1,6 +1,6 @@
 @font-face {
   font-family: Libre Franklin;
-  src: url(/home/marv/react-projects/strength-shop/src/HomePage/Main/LibreFranklin-Regular.ttf);
+  src: url(/home/marv/react-projects/strength-shop/src/HomePage/Main/Fonts/LibreFranklin-Regular.ttf);
 }
 
 body {
@@ -57,8 +57,4 @@ body {
   --font-size-heading-body-small: 0.8125rem;
   --font-size-heading-body-smaller: 0.75rem;
   --font-size-heading-slideshow: 1.8671875rem;
-}
-
-.nav-bar {
-  background-color: #333;
 }
