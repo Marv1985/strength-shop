@@ -1,0 +1,136 @@
+.firstImage {
+}
+.overlay {
+  display: flex;
+  position: absolute;
+  background-color: #000000;
+  opacity: 0.25;
+  height: 99.1%;
+  width: 100%;
+}
+.secondImage {
+  display: none;
+}
+.thirdImage {
+  display: none;
+}
+.imageSlider {
+  display: flex;
+  position: relative;
+  margin: 0 1.2em 0 1.2em;
+  width: fit-content;
+}
+.imageSlider img {
+  width: 100%;
+}
+
+/* arrows and special offer section*/
+.special-offer {
+  background-color: #94140a;
+  font-size: var(--font-size-button-large);
+  padding: 0.85em 1.97em;
+  letter-spacing: 0em;
+  margin-top: 1.3em;
+}
+.special-offer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+.special-offer:hover {
+  background-color: #9f2821;
+  cursor: pointer;
+}
+.arrows {
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrows:hover {
+  cursor: pointer;
+}
+
+.arrow-menu-left {
+  border: solid #fff;
+  border-width: 0 0.17rem 0.17rem 0;
+  display: inline-block;
+  padding: 0.6em;
+}
+.down-menu-left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+}
+
+.arrow-menu-right {
+  border: solid #fff;
+  border-width: 0 0.17rem 0.17rem 0;
+  display: inline-block;
+  padding: 0.5em;
+}
+.down-menu-right {
+  transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+  -moz-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  -o-transform: rotate(315deg);
+}
+.left-arrow {
+  margin-left: 3em;
+  margin-top: 0.1em;
+}
+.right-arrow {
+  margin-right: 3em;
+  margin-top: 0.1em;
+}
+
+/* arrows hover */
+.left-arrow:hover {
+  cursor: pointer;
+  scale: 1.15;
+  transition: all ease-in-out 0.1s;
+  -webkit-transition: all ease-in-out 0.1s;
+  -moz-transition: all ease-in-out 0.1s;
+  -ms-transition: all ease-in-out 0.1s;
+  -o-transition: all ease-in-out 0.1s;
+}
+.right-arrow:hover {
+  cursor: pointer;
+  scale: 1.15;
+  transition: all ease-in-out 0.2s;
+  -webkit-transition: all ease-in-out 0.2s;
+  -moz-transition: all ease-in-out 0.2s;
+  -ms-transition: all ease-in-out 0.2s;
+  -o-transition: all ease-in-out 0.2s;
+}
+
+/* dots */
+.dots {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  left: 47.3%;
+  top: 89%;
+}
+
+.dot {
+  height: 0.5em;
+  width: 0.5rem;
+  margin: 0.5rem;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.dot:hover {
+  cursor: pointer;
+}

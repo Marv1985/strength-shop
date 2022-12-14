@@ -8,7 +8,8 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: var(--font-size-body);
-  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
   color: #333;
   margin: 0;
 }
@@ -57,4 +58,10 @@ body {
   --font-size-heading-body-small: 0.8125rem;
   --font-size-heading-body-smaller: 0.75rem;
   --font-size-heading-slideshow: 1.8671875rem;
+}
+
+.centre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

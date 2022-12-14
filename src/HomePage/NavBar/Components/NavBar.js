@@ -13,7 +13,7 @@ export default function NavBar() {
         <Login />
         <Cart />
       </div>
-      <div>
+      <div className="menus">
         <Menus />
       </div>
     </div>

@@ -212,6 +212,7 @@ export default function Menus() {
     }
   }, []);
 
+  /* rendered */
   return (
     <div className="menus shade">
       {/* 1 */}

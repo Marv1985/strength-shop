@@ -1,6 +1,7 @@
 import React from "react";
 import CurrencyBar from "/home/marv/react-projects/strength-shop/src/HomePage/CurrencyBar/CurrencyBar.js";
 import NavBar from "../NavBar/Components/NavBar";
+import { ImageSlider } from "../ImageSlider/ImageSlider";
 import "/home/marv/react-projects/strength-shop/src/HomePage/Main/homePage.css";
 
 export default function HomePage() {
@@ -11,6 +12,9 @@ export default function HomePage() {
       </div>
       <div>
         <NavBar />
+      </div>
+      <div className="centre">
+        <ImageSlider />
       </div>
     </div>
   );

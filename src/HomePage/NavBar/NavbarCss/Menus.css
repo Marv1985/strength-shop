@@ -2,7 +2,8 @@
   padding-top: 0.1em;
   display: flex;
   align-items: center;
-  margin-left: 15.575em;
+  flex-wrap: wrap;
+  margin-right: 6.73em;
 }
 .hov {
   text-decoration: none;
@@ -25,7 +26,7 @@
 .menus summary {
   list-style: none;
   width: fit-content;
-  padding: 0.62em 1.1em 0.8em 1.1em;
+  padding: 0.62em 1.28em 0.8em 1.1em;
   color: #fff;
   text-shadow: 0.01rem 0 #fff;
   font-weight: 900;
@@ -86,7 +87,7 @@ summary:hover .arrow-menu {
 
 /* hover menu dropdown styling */
 summary {
-  margin-bottom: 0.6em;
+  margin-bottom: 0.58em;
 }
 details li {
   list-style: none;
@@ -110,46 +111,52 @@ details a {
 
 /* dropdown placement */
 .dropdown1 {
+  z-index: 3;
   margin-top: 0.02em;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  width: 15em;
-  left: 5.7em;
+  width: 14.7em;
+  left: 21.4em;
 }
 .dropdown2 {
+  z-index: 3;
   margin-top: 0.02em;
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 15em;
-  left: 16.5em;
+  left: 32.4em;
 }
 .dropdown3 {
+  z-index: 3;
   margin-top: 0.02em;
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 15em;
-  left: 25em;
+  left: 40.8em;
 }
 .dropdown4 {
+  z-index: 3;
   margin-top: 0.02em;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  width: 15.5em;
-  left: 35em;
+  width: 14.7em;
+  left: 51.2em;
 }
 .dropdown5 {
+  z-index: 3;
   margin-top: 0.02em;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  width: 15em;
-  left: 44.7em;
+  width: 14.7em;
+  left: 60.6em;
 }
 .dropdown6 {
+  z-index: 3;
   margin-top: 0.02em;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  width: 15em;
-  left: 60.8em;
+  width: 14.7em;
+  left: 76.7em;
 }
 
 /* onclick menu focus */

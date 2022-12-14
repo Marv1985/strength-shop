@@ -2,10 +2,17 @@
   background-color: #333;
   display: flex;
   flex-direction: column;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
 }
 
 .top-section {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.menus {
+  display: flex;
   justify-content: center;
 }
