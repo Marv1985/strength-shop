@@ -423,7 +423,7 @@ export default function Menus() {
 
       {/* 8 */}
       <details ref={ref6} open={isHovered6}>
-        <summary>
+        <summary className="sum6">
           XMAS GIFTS
           <span>
             <i className="arrow-menu down-menu"></i>

@@ -1,10 +1,46 @@
 .menus {
   padding-top: 0.1em;
   display: flex;
+  position: relative;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   margin-right: 6.73em;
 }
+
+@media only screen and (max-width: 1395px) {
+  .menus {
+    margin-right: 0;
+    justify-content: flex-start;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .menus {
+    display: none;
+  }
+  .search {
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+  }
+}
+
+/* flex wrap movement */
+@media only screen and (max-width: 1176px) {
+  .sum6 {
+    position: relative;
+    right: 1.1em;
+  }
+  .dropdown6 {
+    left: -1.7% !important;
+  }
+}
+@media only screen and (max-width: 1037px) {
+  .pad {
+    position: relative;
+    right: 1.1em;
+  }
+}
+
 .hov {
   text-decoration: none;
   margin-bottom: 0.6em;
@@ -116,7 +152,7 @@ details a {
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 14.7em;
-  left: 21.4em;
+  left: 8.3%;
 }
 .dropdown2 {
   z-index: 3;
@@ -124,7 +160,7 @@ details a {
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 15em;
-  left: 32.4em;
+  left: 23.6%;
 }
 .dropdown3 {
   z-index: 3;
@@ -132,7 +168,7 @@ details a {
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 15em;
-  left: 40.8em;
+  left: 36%;
 }
 .dropdown4 {
   z-index: 3;
@@ -140,7 +176,7 @@ details a {
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 14.7em;
-  left: 51.2em;
+  left: 50.6%;
 }
 .dropdown5 {
   z-index: 3;
@@ -148,7 +184,7 @@ details a {
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 14.7em;
-  left: 60.6em;
+  left: 64.2%;
 }
 .dropdown6 {
   z-index: 3;
@@ -156,7 +192,7 @@ details a {
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 14.7em;
-  left: 76.7em;
+  left: 87%;
 }
 
 /* onclick menu focus */

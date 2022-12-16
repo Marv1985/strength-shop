@@ -10,22 +10,16 @@ export function ImageSlider() {
   return (
     <div className="imageSlider">
       <a className="firstImage" href={"image-1"}>
-        <picture>
-          <source srcSet={firstP2} media="(max-width:1100px)" />
-          <img src={first} alt="" />
-        </picture>
+        <img className="second-image" src={firstP2} alt="" />
+        <img className="first-image" src={first} alt="" />
       </a>
+
       <a className="secondImage" href={"image-2"}>
-        <picture>
-          <source srcSet={secondP2} media="(max-width:1100px)" />
-          <img src={second} alt="" />
-        </picture>
+        <img src={second} alt="" />
       </a>
+
       <a className="thirdImage" href={"image-2"}>
-        <picture>
-          <source srcSet={thirdP2} media="(max-width:1100px)" />
-          <img src={third} alt="" />
-        </picture>
+        <img src={third} alt="" />
       </a>
 
       {/* overlay */}
