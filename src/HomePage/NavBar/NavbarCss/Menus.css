@@ -33,11 +33,34 @@
   .dropdown6 {
     left: -1.7% !important;
   }
+  .dropdown1 {
+    top: 100% !important;
+    left: 10.5% !important;
+  }
+  .dropdown2 {
+    top: 100% !important;
+    left: 27% !important;
+  }
+  .dropdown3 {
+    top: 100% !important;
+    left: 41.5% !important;
+  }
+  .dropdown4 {
+    top: 100% !important;
+    left: 58.2% !important;
+  }
+  .dropdown5 {
+    top: 100% !important;
+    left: 73.5% !important;
+  }
 }
 @media only screen and (max-width: 1037px) {
   .pad {
     position: relative;
     right: 1.1em;
+  }
+  .dropdown6 {
+    left: 6.7% !important;
   }
 }
 
