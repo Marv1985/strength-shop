@@ -10,7 +10,7 @@ import "/home/marv/react-projects/strength-shop/src/HomePage/ImageSlider/ImageSl
 import { useEffect, useState, useRef } from "react";
 import React from "react";
 
-export function ImageSlider() {
+export default function ImageSlider() {
   /* images and state for width more tha 720px */
   const images = [first, fourth, second, third];
   const [p1, setP1] = useState(true);

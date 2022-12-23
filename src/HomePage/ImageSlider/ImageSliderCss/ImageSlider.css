@@ -401,11 +401,7 @@
 }
 .offer2 {
   animation: fadeInAnimation2 linear 1s;
-  transition: ;
-  -webkit-transition: ;
-  -moz-transition: ;
-  -ms-transition: ;
-  -o-transition: ;
+  -webkit-animation: fadeInAnimation2 linear 1s;
 }
 
 @keyframes css {

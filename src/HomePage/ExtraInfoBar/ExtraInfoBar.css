@@ -1,0 +1,111 @@
+/* div inside ".centre" div which is 100vw */
+.wrap {
+  display: flex;
+  width: 95%;
+  justify-content: center;
+}
+
+.extra-info-bar {
+  height: auto;
+  padding: 2.25em 1.562em;
+  display: flex;
+  width: 81.35em;
+  background-color: #f5f5f5;
+}
+.extra-info-bar a {
+  text-decoration: none;
+  color: black;
+}
+@media only screen and (max-width: 1000px) {
+  .extra-info-bar p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .extra-info-bar p {
+    font-size: 0.85rem;
+  }
+  .extra-info-bar .gift-cards {
+    display: none;
+  }
+  .extra-info-bar .delivery {
+    flex-basis: 35%;
+  }
+  .extra-info-bar .contact-us {
+    flex-basis: 35%;
+  }
+  .extra-info-bar .returns {
+    flex-basis: 35%;
+  }
+}
+
+/* delivery section */
+.delivery {
+  display: flex;
+  flex-basis: 25%;
+  line-height: 1.4em;
+}
+.delivery img {
+  height: 3.5em;
+  margin-top: -0.5em;
+  padding-right: 1.3em;
+}
+.delivery p {
+  margin-top: 0%;
+}
+.delivery span:nth-of-type(1) {
+  font-weight: bold;
+}
+
+/* contact us section */
+.contact-us {
+  display: flex;
+  flex-basis: 25%;
+  line-height: 1.4em;
+}
+.contact-us img {
+  height: 3.3em;
+  margin-top: -0.2em;
+  padding-right: 1.3em;
+}
+.contact-us p {
+  margin-top: 0%;
+}
+.contact-us span:nth-of-type(1) {
+  font-weight: bold;
+}
+
+/* returns section */
+.returns {
+  display: flex;
+  flex-basis: 25%;
+  line-height: 1.4em;
+}
+.returns img {
+  height: 3em;
+  padding-right: 1.3em;
+}
+.returns p {
+  margin-top: 0%;
+}
+.returns span:nth-of-type(1) {
+  font-weight: bold;
+}
+
+/* gift cards section */
+.gift-cards {
+  display: flex;
+  flex-basis: 25%;
+  line-height: 1.4em;
+}
+.gift-cards img {
+  height: 2.8em;
+  margin-top: -0.25em;
+  padding-right: 1.3em;
+}
+.gift-cards p {
+  margin-top: 0%;
+}
+.gift-cards span:nth-of-type(1) {
+  font-weight: bold;
+}
