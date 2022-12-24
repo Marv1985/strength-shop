@@ -1,8 +1,8 @@
 .login a {
   text-decoration: none;
   color: #fff;
-  font-weight: 900;
-  font-size: var(--font-size-menu);
+  font-weight: 600;
+  font-size: var(--font-size-menu-body-small);
   text-shadow: 0.01rem 0 #fff;
   display: flex;
   align-items: center;
@@ -14,7 +14,7 @@
 }
 .login {
   display: flex;
-  padding-left: 4.4em;
+  padding-left: 4.2em;
   padding-top: 0.4em;
 }
 

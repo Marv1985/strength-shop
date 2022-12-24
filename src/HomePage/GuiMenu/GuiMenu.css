@@ -1,0 +1,41 @@
+/* div inside ".centre" div which is 100vw */
+.wrap-gui {
+  height: 105em;
+  display: flex;
+  width: 95%;
+  justify-content: center;
+}
+
+/* main grid div */
+.gui-menu {
+  width: 84.5em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.3em;
+  overflow: hidden;
+  margin-bottom: 50em;
+}
+.gui-menu img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* images divs */
+.equipment {
+  grid-column: 1/3;
+  overflow: hidden;
+}
+.bars {
+  grid-column: 3/4;
+  overflow: hidden;
+}
+.weights {
+  grid-column: 1/2;
+  overflow: hidden;
+}
+.sleeves {
+  grid-column: 2/4;
+  overflow: hidden;
+}

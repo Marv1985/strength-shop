@@ -11,3 +11,32 @@
   align-items: center;
   justify-content: center;
 }
+
+/* sticky sub-menu sliding animation */
+.shrink-menus {
+  height: 0;
+  margin-right: 6.73em;
+  overflow: hidden;
+  animation: slide 0.2s ease;
+  -webkit-animation: slide 0.2s ease;
+}
+@keyframes slide {
+  from {
+    height: 3em;
+  }
+  to {
+    height: 0;
+  }
+}
+.menus div {
+  animation: slide-down 0.1s ease;
+  -webkit-animation: slide-down 0.1s ease;
+}
+@keyframes slide-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: 3em;
+  }
+}

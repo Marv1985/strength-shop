@@ -1,7 +1,7 @@
 .search-logo {
   cursor: pointer;
   max-height: 40px;
-  margin-right: 1.65rem;
+  margin-right: 1.6rem;
   padding-top: 0.1em;
   padding-bottom: 0.1em;
 }
@@ -15,7 +15,133 @@
   display: flex;
   padding: 1.25em 0em 1em 0em;
   width: 71.7em;
+  transition: padding 0.1s ease;
+  -webkit-transition: padding 0.1s ease;
+  -moz-transition: padding 0.1s ease;
+  -ms-transition: padding 0.1s ease;
+  -o-transition: padding 0.1s ease;
 }
+/* search bar on shrink */
+.search-shrink {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 71.7em;
+  padding: 0.6em 0;
+  transition: padding 0.1s ease;
+  -webkit-transition: padding 0.1s ease;
+  -moz-transition: padding 0.1s ease;
+  -ms-transition: padding 0.1s ease;
+  -o-transition: padding 0.1s ease;
+}
+
+.search-shrink input {
+  font-size: 1rem;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.875rem;
+  vertical-align: top;
+  border: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0.2em;
+  border-bottom-left-radius: 0.2em;
+}
+.search-shrink2 {
+  display: flex;
+  width: 100%;
+}
+.search-shrink2 button {
+  background-color: var(--jdgm-primary-color);
+  width: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
+  margin: 0;
+  padding: 0;
+}
+.hamburger span {
+  display: block;
+  width: 1.4em;
+  height: 0.13em;
+  margin-bottom: 0.3em;
+  position: relative;
+  background: #fff;
+  border-radius: 3px;
+  z-index: 1;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.9em;
+  margin-left: -0.31em;
+  transition: margin-right 0.1s ease-in-out;
+  -webkit-transition: margin-right 0.1s ease-in-out;
+  -moz-transition: margin-right 0.1s ease-in-out;
+  -ms-transition: margin-right 0.1s ease-in-out;
+  -o-transition: margin-right 0.1s ease-in-out;
+}
+.hamburger-shrink {
+  margin-right: 0;
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+}
+.hamburger-menu {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  width: 100vw;
+  margin-top: 3.5em;
+  margin-left: 11em;
+  padding-right: 5.5em;
+}
+.close {
+  margin-left: 0.15em;
+  width: 2em;
+  height: 2.6em;
+  display: flex;
+  align-items: center;
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+}
+
+.close:before,
+.close:after {
+  content: " ";
+  height: 1.4em;
+  width: 0.15em;
+  background-color: #fff;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+.close:hover {
+  cursor: pointer;
+}
+/* end of shrink search bar animation */
+
 .search-button {
   display: flex;
   width: 100%;

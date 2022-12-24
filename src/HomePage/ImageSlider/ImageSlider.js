@@ -112,7 +112,7 @@ export default function ImageSlider() {
           prevIndex === images.length - 1 ? 0 : prevIndex + 1
         );
       }
-    }, 5000);
+    }, 6000);
     return () => resetTimeout();
   });
 
