@@ -397,7 +397,7 @@ export default function Menus() {
 
       {/* 6 */}
       <details ref={ref5} open={isHovered5}>
-        <summary>
+        <summary className="sum5">
           SHOP BY SPORT
           <span>
             <i className="arrow-menu down-menu"></i>

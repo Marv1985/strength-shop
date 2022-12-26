@@ -1,20 +1,87 @@
 /* div inside ".centre" div which is 100vw */
 .wrap-gui {
-  height: 105em;
+  padding: 1.8em 0;
   display: flex;
-  width: 95%;
+  max-width: 96%;
+  max-height: 100%;
   justify-content: center;
+}
+@media only screen and (max-width: 1400px) {
+  .gui-menu {
+    height: 45em !important;
+  }
+  .equipment-overlay1 {
+    height: 48.7% !important;
+  }
+  .bars-overlay1 {
+    height: 48.7% !important;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .gui-menu {
+    max-height: 40em !important;
+  }
+  .equipment-overlay1 {
+    height: 48.5% !important;
+  }
+  .bars-overlay1 {
+    height: 48.5% !important;
+    width: 24.9em !important;
+    left: 67.9% !important;
+  }
+  .weights-overlay1 {
+    height: 48.5% !important;
+    top: 51.5% !important;
+    width: 32.1% !important;
+  }
+  .sleeves-overlay1 {
+    height: 48.5% !important;
+    top: 51.5% !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .gui-menu {
+    height: 35em !important;
+    display: grid;
+    gap: 0.5em !important;
+  }
+  .equipment-overlay1 {
+    width: 66.3% !important;
+    height: 49.2% !important;
+  }
+  .bars-overlay1 {
+    height: 49% !important;
+    width: 25.5em !important;
+    left: 67.3% !important;
+  }
+  .weights-overlay1 {
+    height: 49.5% !important;
+    top: 50.7% !important;
+    width: 32.9% !important;
+  }
+  .sleeves-overlay1 {
+    height: 49.5% !important;
+    top: 50.7% !important;
+    left: 33.7% !important;
+  }
+}
+@media only screen and (max-width: 930px) {
+  .weights-overlay1 {
+    width: 32.5% !important;
+  }
 }
 
 /* main grid div */
 .gui-menu {
   width: 84.5em;
+  height: 55.5em;
+  display: flex;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1.3em;
   overflow: hidden;
-  margin-bottom: 50em;
+  position: relative;
 }
 .gui-menu img {
   object-fit: cover;
@@ -38,4 +105,173 @@
 .sleeves {
   grid-column: 2/4;
   overflow: hidden;
+}
+
+/* equipment image overlays */
+.equipment-overlay1 {
+  height: 48.9%;
+  width: 66.1%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+@media only screen and (max-width: 1060px) {
+  .equipment-overlay2 span:nth-of-type(1) {
+    font-size: var(--font-size-heading-medium) !important;
+  }
+  .equipment-overlay2 span:nth-of-type(2) {
+    font-size: var(--font-size-body-medium) !important;
+  }
+}
+
+.equipment-overlay1:hover {
+  cursor: pointer;
+}
+.equipment-overlay2 {
+  position: absolute;
+  color: #ffffff;
+  padding: 1.9em;
+  margin-right: 17em;
+  overflow-wrap: break-word;
+}
+.equipment-overlay2:hover {
+  cursor: pointer;
+}
+.equipment-overlay2 span:nth-of-type(1) {
+  font-size: var(--font-size-heading-large);
+  line-height: 1.4;
+  font-family: Arimo, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.equipment-overlay2 span:nth-of-type(2) {
+  font-size: var(--font-size-body-large);
+  line-height: 1.7;
+}
+/* sleeves image overlays */
+.sleeves-overlay1 {
+  height: 48.9%;
+  width: 66.1%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 51.2%;
+  left: 33.8%;
+}
+@media only screen and (max-width: 1060px) {
+  .sleeves-overlay1 {
+    left: 34%;
+  }
+  .sleeves-overlay2 span:nth-of-type(1) {
+    font-size: var(--font-size-heading-medium) !important;
+  }
+  .sleeves-overlay2 span:nth-of-type(2) {
+    font-size: var(--font-size-body-medium) !important;
+  }
+}
+
+.sleeves-overlay1:hover {
+  cursor: pointer;
+}
+.sleeves-overlay2 {
+  position: absolute;
+  color: #ffffff;
+  padding: 1.9em;
+  margin-right: 17em;
+  overflow-wrap: break-word;
+}
+.sleeves-overlay2:hover {
+  cursor: pointer;
+}
+.sleeves-overlay2 span:nth-of-type(1) {
+  font-size: var(--font-size-heading-large);
+  line-height: 1.4;
+  font-family: Arimo, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.sleeves-overlay2 span:nth-of-type(2) {
+  font-size: var(--font-size-body-large);
+  line-height: 1.7;
+}
+
+/* bars image overlays */
+.bars-overlay1 {
+  height: 48.9%;
+  width: 99%;
+  left: 67.7%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+@media only screen and (max-width: 1060px) {
+  .bars-overlay2 span:nth-of-type(1) {
+    font-size: var(--font-size-heading-3) !important;
+  }
+  .bars-overlay2 span:nth-of-type(2) {
+    font-size: var(--font-size-body-small) !important;
+  }
+}
+
+.bars-overlay1:hover {
+  cursor: pointer;
+}
+.bars-overlay2 {
+  position: absolute;
+  color: #ffffff;
+  padding: 1.9em;
+  margin-right: 45em;
+  overflow-wrap: break-word;
+}
+.bars-overlay2:hover {
+  cursor: pointer;
+}
+.bars-overlay2 span:nth-of-type(1) {
+  font-size: var(--font-size-heading-2);
+  line-height: 1.4;
+  font-family: Arimo, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.bars-overlay2 span:nth-of-type(2) {
+  font-size: var(--font-size-body-medium);
+  line-height: 1.7;
+}
+
+/* weights image overlays */
+.weights-overlay1 {
+  height: 48.9%;
+  width: 32.3%;
+  top: 51.2%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+@media only screen and (max-width: 1060px) {
+  .weights-overlay2 span:nth-of-type(1) {
+    font-size: var(--font-size-heading-3) !important;
+  }
+  .weights-overlay2 span:nth-of-type(2) {
+    font-size: var(--font-size-body-small) !important;
+  }
+}
+.weights-overlay1:hover {
+  cursor: pointer;
+}
+.weights-overlay2 {
+  position: absolute;
+  color: #ffffff;
+  padding: 1.9em;
+  margin-right: 5em;
+  overflow-wrap: break-word;
+}
+.weights-overlay2:hover {
+  cursor: pointer;
+}
+.weights-overlay2 span:nth-of-type(1) {
+  font-size: var(--font-size-heading-2);
+  line-height: 1.4;
+  font-family: Arimo, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.weights-overlay2 span:nth-of-type(2) {
+  font-size: var(--font-size-body-medium);
+  line-height: 1.7;
 }

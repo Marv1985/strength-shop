@@ -7,7 +7,7 @@ import "/home/marv/react-projects/strength-shop/src/HomePage/NavBar/NavbarCss/Na
 import { useEffect, useState } from "react";
 
 export default function NavBar() {
-  const [isShrunk, setShrunk] = useState(true);
+  const [isShrunk, setShrunk] = useState(false);
   useEffect(() => {
     const onScroll = () => {
       setShrunk((isShrunk) => {

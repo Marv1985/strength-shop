@@ -10,7 +10,11 @@ export default function Search() {
   const [menu2, setMenu2] = useState(false);
   const [toggleMenu, setToggleMenu] = useState(false);
 
-  const [isShrunk, setShrunk] = useState(true);
+  const Display = () => {
+    return <Menus />;
+  };
+
+  const [isShrunk, setShrunk] = useState(false);
   useEffect(() => {
     const onScroll = () => {
       setShrunk((isShrunk) => {
@@ -125,7 +129,10 @@ export default function Search() {
         </button>
         {/* input field onclick popup suggestions */}
         {suggestions ? (
-          <div ref={wrapperRef} className="suggestions">
+          <div
+            ref={wrapperRef}
+            className={isShrunk ? "suggestions-shrink" : "suggestions"}
+          >
             <div className="popular-suggestions">
               <ul>
                 <li className="suggestions-title">POPULAR SUGGESTIONS</li>
@@ -174,7 +181,9 @@ export default function Search() {
       </div>
       {menu ? (
         <div className="hamburger-menu">
-          <Menus />
+          <div>
+            <div className="ss">{Display()}</div>
+          </div>
         </div>
       ) : null}
     </div>

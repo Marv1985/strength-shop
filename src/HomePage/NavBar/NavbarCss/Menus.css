@@ -14,7 +14,7 @@
     justify-content: flex-start;
   }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1038px) {
   .menus {
     display: none;
   }

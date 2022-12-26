@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 0.6em;
 }
 
 /* sticky sub-menu sliding animation */
@@ -26,17 +27,5 @@
   }
   to {
     height: 0;
-  }
-}
-.menus div {
-  animation: slide-down 0.1s ease;
-  -webkit-animation: slide-down 0.1s ease;
-}
-@keyframes slide-down {
-  from {
-    height: 0;
-  }
-  to {
-    height: 3em;
   }
 }
