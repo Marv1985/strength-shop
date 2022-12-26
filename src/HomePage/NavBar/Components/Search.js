@@ -4,11 +4,37 @@ import "/home/marv/react-projects/strength-shop/src/HomePage/NavBar/NavbarCss/Se
 import searchIcon from "/home/marv/react-projects/strength-shop/src/HomePage/NavBar/Images/search-icon.png";
 import magnifierIcon from "/home/marv/react-projects/strength-shop/src/HomePage/NavBar/Images/magnifier.png";
 import Menus from "./Menus";
+import WidthMenu from "./WidthMenu";
 
 export default function Search() {
   const [menu, setMenu] = useState(false);
   const [menu2, setMenu2] = useState(false);
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  /* detect width to set burger icon */
+  const [widthMenu, setWidthMenu] = useState(window.innerWidth);
+  const [widthMenu2, setWidthMenu2] = useState(false);
+  const [widthMenuPopup, setWidthMenuPopup] = useState(false);
+  const [widthMenuClose ,setWidthMenuClose] = useState(false);
+  useEffect(() => {
+    function reportWindowSize() {
+      setWidthMenu(window.innerWidth);
+      if (widthMenu < 1038) {
+        setWidthMenu2(true);
+        setWidthMenuClose(false);
+      }
+      if (widthMenu > 1038) {
+        setWidthMenu2(false);
+        setWidthMenuPopup(false);
+        setWidthMenuClose(false);
+        document.body.style.overflowY = "unset";
+      }
+    }
+    // Trigger this function on resize
+    window.addEventListener("resize", reportWindowSize);
+    //  Cleanup for componentWillUnmount
+    return () => window.removeEventListener("resize", reportWindowSize);
+  }, [widthMenu]);
 
   const Display = () => {
     return <Menus />;
@@ -89,6 +115,20 @@ export default function Search() {
     setMenu(false);
   };
 
+  /* width menu icon display */
+  const displayWidthMenu = () => {
+    setWidthMenuPopup(true);
+    setWidthMenuClose(true);
+    document.body.style.overflow = "hidden";
+  };
+
+  const toggleHamburgerMenuClose = () => {
+    setWidthMenuClose(false);
+    setWidthMenuPopup(false);
+    setWidthMenu2(false);
+    document.body.style.overflowY = "unset";
+  };
+
   return (
     <div className={isShrunk ? "search-shrink" : "search"}>
       {/* hamburger menu on shrink */}
@@ -112,6 +152,27 @@ export default function Search() {
           <span></span>
         </div>
       ) : null}
+
+      {/* width menu hamburger icon */}
+      {widthMenuPopup ? <WidthMenu /> : null}
+      {widthMenu2 ? (
+        <div onClick={displayWidthMenu} className="hamburger2">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      ) : null}
+       {widthMenuClose ? (
+        <div
+          onClick={toggleHamburgerMenuClose}
+          className="close2"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      ) : null}
+
       {/* logo */}
       <a href={"home"}>
         <img className="search-logo" src={logo} alt="logo" />
@@ -182,7 +243,7 @@ export default function Search() {
       {menu ? (
         <div className="hamburger-menu">
           <div>
-            <div className="ss">{Display()}</div>
+            <div className="hamburger-menu-p2">{Display()}</div>
           </div>
         </div>
       ) : null}

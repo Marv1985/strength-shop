@@ -2,6 +2,7 @@
 .wrap {
   display: flex;
   width: 96%;
+  margin-right: 15px;
   justify-content: center;
 }
 

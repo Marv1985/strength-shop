@@ -4,6 +4,13 @@
   flex-direction: column;
   padding-left: 1.25em;
   padding-right: 1.25em;
+  margin-right: 15px;
+}
+
+@media only screen and (max-width: 1038px) {
+  .nav-bar {
+    margin-right: 0px;
+  }
 }
 
 .top-section {
