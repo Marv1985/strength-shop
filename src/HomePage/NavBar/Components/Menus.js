@@ -216,7 +216,7 @@ export default function Menus() {
   return (
     <div className="menus shade">
       {/* 1 */}
-      <a className="hov" href={"sale"}>
+      <a className="hov" href={"#0"}>
         XMAS SALE
       </a>
 
@@ -230,22 +230,22 @@ export default function Menus() {
         </summary>
         <ul className="dropdown1" ref={ref}>
           <li>
-            <a href={"weights"}>Weight Plates</a>
+            <a href={"#0"}>Weight Plates</a>
           </li>
           <li>
-            <a href={"weights"}>Bars</a>
+            <a href={"#0"}>Bars</a>
           </li>
           <li>
-            <a href={"weights"}>Collars</a>
+            <a href={"#0"}>Collars</a>
           </li>
           <li>
-            <a href={"weights"}>Dumbbells</a>
+            <a href={"#0"}>Dumbbells</a>
           </li>
           <li>
-            <a href={"weights"}>Kettlebells</a>
+            <a href={"#0"}>Kettlebells</a>
           </li>
           <li>
-            <a href={"weights"}>Medicine Balls</a>
+            <a href={"#0"}>Medicine Balls</a>
           </li>
         </ul>
       </details>
@@ -260,40 +260,40 @@ export default function Menus() {
         </summary>
         <ul className="dropdown2" ref={ref2}>
           <li>
-            <a href={"equipment"}>Cages & Squat Stands</a>
+            <a href={"#0"}>Cages & Squat Stands</a>
           </li>
           <li>
-            <a href={"equipment"}>Benches</a>
+            <a href={"#0"}>Benches</a>
           </li>
           <li>
-            <a href={"equipment"}>Rigs</a>
+            <a href={"#0"}>Rigs</a>
           </li>
           <li>
-            <a href={"equipment"}>Strongman Equipment</a>
+            <a href={"#0"}>Strongman Equipment</a>
           </li>
           <li>
-            <a href={"equipment"}>Home Gym Equipment</a>
+            <a href={"#0"}>Home Gym Equipment</a>
           </li>
           <li>
-            <a href={"equipment"}>Conditioning</a>
+            <a href={"#0"}>Conditioning</a>
           </li>
           <li>
-            <a href={"equipment"}>GHDs & Hyperextension</a>
+            <a href={"#0"}>GHDs & Hyperextension</a>
           </li>
           <li>
-            <a href={"equipment"}>Bodyweight Training</a>
+            <a href={"#0"}>Bodyweight Training</a>
           </li>
           <li>
-            <a href={"equipment"}>Plyo Boxes</a>
+            <a href={"#0"}>Plyo Boxes</a>
           </li>
           <li>
-            <a href={"equipment"}>Other Equipment</a>
+            <a href={"#0"}>Other Equipment</a>
           </li>
           <li>
-            <a href={"equipment"}>Matting</a>
+            <a href={"#0"}>Matting</a>
           </li>
           <li>
-            <a href={"equipment"}>Storage</a>
+            <a href={"#0"}>Storage</a>
           </li>
         </ul>
       </details>
@@ -309,7 +309,7 @@ export default function Menus() {
         <ul className="dropdown3" ref={ref3}>
           <div ref={refMenu}>
             <li className="menuPadding">
-              <a href={"weights"}>
+              <a href={"#0"}>
                 Belts{" "}
                 <span>
                   <i className="arrow-menu2 down-menu2"></i>
@@ -319,39 +319,39 @@ export default function Menus() {
             {subMenu ? (
               <ul className="subMenu">
                 <li>
-                  <a href="weights">
+                  <a href="#0">
                     Single & Double Prong <br /> Buckle Belts
                   </a>
                 </li>
                 <li>
-                  <a href="weights">Lever Buckle Belts</a>
+                  <a href="#0">Lever Buckle Belts</a>
                 </li>
                 <li>
-                  <a href="weights">Velcro/Webbing Belts</a>
+                  <a href="#0">Velcro/Webbing Belts</a>
                 </li>
                 <li>
-                  <a href="weights">Dipping Belts</a>
+                  <a href="#0">Dipping Belts</a>
                 </li>
               </ul>
             ) : null}
           </div>
           <li>
-            <a href={"weights"}>Knee Sleeves</a>
+            <a href={"#0"}>Knee Sleeves</a>
           </li>
           <li>
-            <a href={"weights"}>Elbow Sleeves</a>
+            <a href={"#0"}>Elbow Sleeves</a>
           </li>
           <li>
-            <a href={"weights"}>Wrist Wraps</a>
+            <a href={"#0"}>Wrist Wraps</a>
           </li>
           <li>
-            <a href={"weights"}>Knee Wraps</a>
+            <a href={"#0"}>Knee Wraps</a>
           </li>
           <li>
-            <a href={"weights"}>Straps</a>
+            <a href={"#0"}>Straps</a>
           </li>
           <li>
-            <a href={"weights"}>IPF Approved</a>
+            <a href={"#0"}>IPF Approved</a>
           </li>
         </ul>
       </details>
@@ -366,31 +366,31 @@ export default function Menus() {
         </summary>
         <ul className="dropdown4" ref={ref4}>
           <li>
-            <a href={"weights"}>Chalk & Grip Tools</a>
+            <a href={"#0"}>Chalk & Grip Tools</a>
           </li>
           <li>
-            <a href={"weights"}>Smelling Salts</a>
+            <a href={"#0"}>Smelling Salts</a>
           </li>
           <li>
-            <a href={"weights"}>Resistance Bands</a>
+            <a href={"#0"}>Resistance Bands</a>
           </li>
           <li>
-            <a href={"weights"}>Mobility Tools</a>
+            <a href={"#0"}>Mobility Tools</a>
           </li>
           <li>
-            <a href={"weights"}>Clothing</a>
+            <a href={"#0"}>Clothing</a>
           </li>
           <li>
-            <a href={"weights"}>Footwear</a>
+            <a href={"#0"}>Footwear</a>
           </li>
           <li>
-            <a href={"weights"}>Singlets</a>
+            <a href={"#0"}>Singlets</a>
           </li>
           <li>
-            <a href={"weights"}>Shakers & Jugs</a>
+            <a href={"#0"}>Shakers & Jugs</a>
           </li>
           <li>
-            <a href={"weights"}>Gift Cards</a>
+            <a href={"#0"}>Gift Cards</a>
           </li>
         </ul>
       </details>
@@ -405,19 +405,19 @@ export default function Menus() {
         </summary>
         <ul className="dropdown5" ref={ref5}>
           <li>
-            <a href={"weights"}>Powerlifting</a>
+            <a href={"#0"}>Powerlifting</a>
           </li>
           <li>
-            <a href={"weights"}>Strongman</a>
+            <a href={"#0"}>Strongman</a>
           </li>
           <li>
-            <a href={"weights"}>Weightlifting</a>
+            <a href={"#0"}>Weightlifting</a>
           </li>
         </ul>
       </details>
 
       {/* 7 */}
-      <a className="pad" href={"sale"}>
+      <a className="pad" href={"#0"}>
         NEW IN
       </a>
 
@@ -431,16 +431,16 @@ export default function Menus() {
         </summary>
         <ul className="dropdown6" ref={ref6}>
           <li>
-            <a href={"weights"}>Gifts Under £10</a>
+            <a href={"#0"}>Gifts Under £10</a>
           </li>
           <li>
-            <a href={"weights"}>Gifts Under £20</a>
+            <a href={"#0"}>Gifts Under £20</a>
           </li>
           <li>
-            <a href={"weights"}>Gifts Under £30</a>
+            <a href={"#0"}>Gifts Under £30</a>
           </li>
           <li>
-            <a href={"weights"}>Gifts Over £30</a>
+            <a href={"#0"}>Gifts Over £30</a>
           </li>
         </ul>
       </details>

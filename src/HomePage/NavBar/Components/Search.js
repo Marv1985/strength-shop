@@ -15,7 +15,7 @@ export default function Search() {
   const [widthMenu, setWidthMenu] = useState(window.innerWidth);
   const [widthMenu2, setWidthMenu2] = useState(false);
   const [widthMenuPopup, setWidthMenuPopup] = useState(false);
-  const [widthMenuClose ,setWidthMenuClose] = useState(false);
+  const [widthMenuClose, setWidthMenuClose] = useState(false);
   useEffect(() => {
     function reportWindowSize() {
       setWidthMenu(window.innerWidth);
@@ -70,6 +70,14 @@ export default function Search() {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, [menu, toggleMenu]);
+
+  /* seperate useeffect to disable one menu when the other is active */
+  useEffect(() => {
+    if (widthMenu < 1038) {
+      setShrunk(false);
+      setWidthMenu2(true);
+    }
+  }, [widthMenu, isShrunk]);
 
   const [suggestions, setSuggestions] = useState(false);
   const wrapperRef = useRef(null);
@@ -154,7 +162,9 @@ export default function Search() {
       ) : null}
 
       {/* width menu hamburger icon */}
-      {widthMenuPopup ? <WidthMenu /> : null}
+      {widthMenuPopup ? (
+        <WidthMenu toggleHamburgerMenuClose={toggleHamburgerMenuClose} />
+      ) : null}
       {widthMenu2 ? (
         <div onClick={displayWidthMenu} className="hamburger2">
           <span></span>
@@ -162,7 +172,7 @@ export default function Search() {
           <span></span>
         </div>
       ) : null}
-       {widthMenuClose ? (
+      {/* {widthMenuClose ? (
         <div
           onClick={toggleHamburgerMenuClose}
           className="close2"
@@ -171,10 +181,10 @@ export default function Search() {
           <span></span>
           <span></span>
         </div>
-      ) : null}
+      ) : null} */}
 
       {/* logo */}
-      <a href={"home"}>
+      <a href={"#0"}>
         <img className="search-logo" src={logo} alt="logo" />
       </a>
       <div className={isShrunk ? "search-shrink2" : "search-button"}>

@@ -191,7 +191,7 @@
 }
 .close {
   margin-left: 0.15em;
-  padding-right: .8em;
+  padding-right: 0.8em;
   width: 2em;
   height: 2.6em;
   display: flex;
@@ -207,7 +207,7 @@
 .close:after {
   position: absolute;
   left: 15px;
-  content: ' ';
+  content: " ";
   height: 23px;
   width: 2px;
   background-color: #fff;
@@ -222,41 +222,6 @@
   cursor: pointer;
 }
 
-/* close2 */
-.close2 {
-  margin-left: 15.6em;
-  top: -.9em;
-  position: absolute;
-  width: 1em;
-  height: 1em;
-  z-index: 3;
-  display: flex;
-  align-items: center;
-  transition: all 0.1s ease-in-out;
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -ms-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-}
-
-.close2:before,
-.close2:after {
-  position: absolute;
-  left: 15px;
-  content: ' ';
-  height: 16px;
-  width: 1.5px;
-  background-color: #333;
-}
-.close2:before {
-  transform: rotate(45deg);
-}
-.close2:after {
-  transform: rotate(-45deg);
-}
-.close2:hover {
-  cursor: pointer;
-}
 /* end of shrink search bar animation */
 
 .search-button {

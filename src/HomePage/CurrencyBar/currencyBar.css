@@ -11,8 +11,7 @@
   color: #6e6d6d;
   cursor: pointer;
 }
-.country,
-button {
+.country {
   display: flex;
   justify-content: space-between;
   width: 14em;

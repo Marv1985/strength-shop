@@ -9,7 +9,7 @@ export default function ExtraInfoBar() {
     <div className="wrap">
       <div className="extra-info-bar">
         {/* delivery section */}
-        <a className="delivery" href={"delivery"}>
+        <a className="delivery" href={"#0"}>
           <div>
             <img src={van} alt="delivery" />
           </div>
@@ -22,7 +22,7 @@ export default function ExtraInfoBar() {
           </div>
         </a>
         {/* contact us section */}
-        <a className="contact-us" href={"contact"}>
+        <a className="contact-us" href={"#0"}>
           <div>
             <img src={contact} alt="contact us" />
           </div>
@@ -35,7 +35,7 @@ export default function ExtraInfoBar() {
           </div>
         </a>
         {/* returns section */}
-        <a className="returns" href={"returns"}>
+        <a className="returns" href={"#0"}>
           <div>
             <img src={returns} alt="returns policy" />
           </div>
@@ -48,7 +48,7 @@ export default function ExtraInfoBar() {
           </div>
         </a>
         {/* gift cards section */}
-        <a className="gift-cards" href={"gift-cards"}>
+        <a className="gift-cards" href={"#0"}>
           <div>
             <img src={gift} alt="gift cards" />
           </div>

@@ -4,7 +4,7 @@ import "/home/marv/react-projects/strength-shop/src/HomePage/NavBar/NavbarCss/Lo
 export default function Login() {
   return (
     <div className="login">
-      <a href={"user"}>
+      <a href={"#0"}>
         <img className="user-image" src={user} alt="user" />
         <span>LOGIN</span>
       </a>

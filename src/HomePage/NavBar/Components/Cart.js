@@ -4,7 +4,7 @@ import "/home/marv/react-projects/strength-shop/src/HomePage/NavBar/NavbarCss/Ca
 export default function Cart() {
   return (
     <div className="cart">
-      <a href={"cart"}>
+      <a href={"#0"}>
         <img className="cart-image" src={cart} alt="cart" />
       </a>
     </div>
