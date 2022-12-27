@@ -15,18 +15,15 @@ export default function Search() {
   const [widthMenu, setWidthMenu] = useState(window.innerWidth);
   const [widthMenu2, setWidthMenu2] = useState(false);
   const [widthMenuPopup, setWidthMenuPopup] = useState(false);
-  const [widthMenuClose, setWidthMenuClose] = useState(false);
   useEffect(() => {
     function reportWindowSize() {
       setWidthMenu(window.innerWidth);
       if (widthMenu < 1038) {
         setWidthMenu2(true);
-        setWidthMenuClose(false);
       }
       if (widthMenu > 1038) {
         setWidthMenu2(false);
         setWidthMenuPopup(false);
-        setWidthMenuClose(false);
         document.body.style.overflowY = "unset";
       }
     }
@@ -126,12 +123,10 @@ export default function Search() {
   /* width menu icon display */
   const displayWidthMenu = () => {
     setWidthMenuPopup(true);
-    setWidthMenuClose(true);
     document.body.style.overflow = "hidden";
   };
 
   const toggleHamburgerMenuClose = () => {
-    setWidthMenuClose(false);
     setWidthMenuPopup(false);
     setWidthMenu2(false);
     document.body.style.overflowY = "unset";
