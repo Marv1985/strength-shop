@@ -1,10 +1,10 @@
 @font-face {
-  font-family: Libre Franklin;
+  font-family: "Libre Franklin";
   src: url(/home/marv/react-projects/strength-shop/src/HomePage/Main/Fonts/LibreFranklin-Regular.ttf);
 }
 
 body {
-  font-family: Libre Franklin, sans-serif;
+  font-family: "Libre Franklin", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: var(--font-size-body);

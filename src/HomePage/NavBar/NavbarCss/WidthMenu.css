@@ -1,7 +1,7 @@
 .width-menu-wrapper {
   position: absolute;
-  height: 60em;
-  width: 80em;
+  height: 100vh;
+  width: 100vw;
   z-index: 2;
   top: 0;
   left: 0;
@@ -18,8 +18,8 @@
 
   position: fixed;
   position: absolute;
-  height: 60em;
-  width: 80em;
+  height: 100vh;
+  width: 100vw;
 }
 
 .width-menu {
@@ -30,7 +30,7 @@
 
   position: fixed;
   background-color: #ffffff;
-  height: 57em;
+  height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
 }

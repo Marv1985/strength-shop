@@ -1,0 +1,61 @@
+.hover-buttons {
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.16);
+  box-shadow: 0 1px 4px #8080801c;
+  border-top: none;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+  padding-bottom: 0.9em;
+  top: 86.5%;
+  animation: drop 0.2s linear;
+  -webkit-animation: drop 0.2s linear;
+}
+.hover-buttons button {
+  border: 1px solid #dddddd;
+  box-shadow: none;
+  font-family: "Libre Franklin", sans-serif;
+  padding: 0.9em 0.9em;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  background-color: #94140a;
+  color: #ffffff;
+  border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+  font-weight: 700;
+  text-shadow: 0.01rem 0 #fff;
+  font-style: normal;
+  font-size: var(--font-size-button-small);
+}
+@keyframes drop {
+  0% {
+    transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+  }
+  50% {
+    transform: scaleY(0.5);
+    -webkit-transform: scaleY(0.5);
+    -moz-transform: scaleY(0.5);
+    -ms-transform: scaleY(0.5);
+    -o-transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+  }
+}
+
+.hover-buttons button:hover {
+  cursor: pointer;
+  background-color: #a52218;
+}

@@ -190,7 +190,7 @@ export default function Search() {
           type="text"
           placeholder="What are you looking for?"
         />
-        <button type="button">
+        <button className="button-change-search">
           <img className="search-icon" src={searchIcon} alt="search-icon" />
         </button>
         {/* input field onclick popup suggestions */}
