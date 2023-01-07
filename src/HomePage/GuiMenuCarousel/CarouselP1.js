@@ -1,163 +1,181 @@
 import carousel1 from "/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-1.avif";
-import carousel2p1 from "/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-2-p1.avif";
-import carousel2p2 from "/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-2-p2.avif";
-import measurement from "/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/rsz_test.jpg";
-import carousel3p2 from "/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-3-p2.avif";
-import carousel4 from "/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-4.avif";
-import carousel5p1 from "/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-5-p1.avif";
-import carousel5p2 from "/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-5-p2.avif";
-import { useState, useRef, useEffect } from "react";
 import HoverDropdownButton1 from "./HoverButtons/HoverDropdownButton1";
+import { HoverDropdownButton2 } from "./HoverButtons/HoverDropdownButton2";
+import React from "react";
+import { useEffect, useState } from "react";
 
 export default function CarouselP1() {
-  /* first image hover */
-  const [secondary, setSecondary] = useState(false);
-  const [main, setMain] = useState(true);
-  const ref1 = useRef(null);
+  const [text1, setText1] = useState(false);
+  const [isShrunk, setShrunk] = useState(false);
 
   useEffect(() => {
-    const node = ref1.current;
+    const onScroll = () => {
+      setShrunk((isShrunk) => {
+        if (
+          !isShrunk &&
+          (document.body.scrollTop > 950 ||
+            document.documentElement.scrollTop > 950)
+        ) {
+          setText1(true);
+          return true;
+        }
 
-    function func() {
-      setSecondary(true);
-      setMain(false);
-    }
+        return isShrunk;
+      });
+    };
 
-    function func2() {
-      setSecondary(false);
-      setMain(true);
-    }
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [text1, isShrunk]);
 
-    if (node) {
-      node.addEventListener("mouseenter", func);
-      node.addEventListener("mouseleave", func2);
+  // /* first image hover */
+  // const [secondary, setSecondary] = useState(false);
+  // const [main, setMain] = useState(true);
+  // const ref1 = useRef(null);
 
-      return () => {
-        node.addEventListener("mouseenter", func);
-        node.addEventListener("mouseleave", func2);
-      };
-    }
-  }, [main, secondary]);
+  // useEffect(() => {
+  //   const node = ref1.current;
 
-  /* second image hover */
-  const [secondary2, setSecondary2] = useState(false);
-  const [main2, setMain2] = useState(true);
-  const ref2 = useRef(null);
+  //   function func() {
+  //     setSecondary(true);
+  //     setMain(false);
+  //   }
 
-  useEffect(() => {
-    const node = ref2.current;
+  //   function func2() {
+  //     setSecondary(false);
+  //     setMain(true);
+  //   }
 
-    function func() {
-      setSecondary2(true);
-      setMain2(false);
-    }
+  //   if (node) {
+  //     node.addEventListener("mouseenter", func);
+  //     node.addEventListener("mouseleave", func2);
 
-    function func2() {
-      setSecondary2(false);
-      setMain2(true);
-    }
+  //     return () => {
+  //       node.addEventListener("mouseenter", func);
+  //       node.addEventListener("mouseleave", func2);
+  //     };
+  //   }
+  // }, [main, secondary]);
 
-    if (node) {
-      node.addEventListener("mouseenter", func);
-      node.addEventListener("mouseleave", func2);
+  // /* second image hover */
+  // const [secondary2, setSecondary2] = useState(false);
+  // const [main2, setMain2] = useState(true);
+  // const ref2 = useRef(null);
 
-      return () => {
-        node.addEventListener("mouseenter", func);
-        node.addEventListener("mouseleave", func2);
-      };
-    }
-  }, [main2, secondary2]);
+  // useEffect(() => {
+  //   const node = ref2.current;
 
-  /* third image hover */
-  const [secondary3, setSecondary3] = useState(false);
-  const [main3, setMain3] = useState(true);
-  const ref3 = useRef(null);
+  //   function func() {
+  //     setSecondary2(true);
+  //     setMain2(false);
+  //   }
 
-  useEffect(() => {
-    const node = ref3.current;
+  //   function func2() {
+  //     setSecondary2(false);
+  //     setMain2(true);
+  //   }
 
-    function func() {
-      setSecondary3(true);
-      setMain3(false);
-    }
+  //   if (node) {
+  //     node.addEventListener("mouseenter", func);
+  //     node.addEventListener("mouseleave", func2);
 
-    function func2() {
-      setSecondary3(false);
-      setMain3(true);
-    }
+  //     return () => {
+  //       node.addEventListener("mouseenter", func);
+  //       node.addEventListener("mouseleave", func2);
+  //     };
+  //   }
+  // }, [main2, secondary2]);
 
-    if (node) {
-      node.addEventListener("mouseenter", func);
-      node.addEventListener("mouseleave", func2);
+  // /* third image hover */
+  // const [secondary3, setSecondary3] = useState(false);
+  // const [main3, setMain3] = useState(true);
+  // const ref3 = useRef(null);
 
-      return () => {
-        node.addEventListener("mouseenter", func);
-        node.addEventListener("mouseleave", func2);
-      };
-    }
-  }, [main3, secondary3]);
+  // useEffect(() => {
+  //   const node = ref3.current;
 
-  /* fourth image hover */
-  const [secondary4, setSecondary4] = useState(false);
-  const [main4, setMain4] = useState(true);
-  const ref4 = useRef(null);
+  //   function func() {
+  //     setSecondary3(true);
+  //     setMain3(false);
+  //   }
 
-  useEffect(() => {
-    const node = ref4.current;
+  //   function func2() {
+  //     setSecondary3(false);
+  //     setMain3(true);
+  //   }
 
-    function func() {
-      setSecondary4(true);
-      setMain4(false);
-    }
+  //   if (node) {
+  //     node.addEventListener("mouseenter", func);
+  //     node.addEventListener("mouseleave", func2);
 
-    function func2() {
-      setSecondary4(false);
-      setMain4(true);
-    }
+  //     return () => {
+  //       node.addEventListener("mouseenter", func);
+  //       node.addEventListener("mouseleave", func2);
+  //     };
+  //   }
+  // }, [main3, secondary3]);
 
-    if (node) {
-      node.addEventListener("mouseenter", func);
-      node.addEventListener("mouseleave", func2);
+  // /* fourth image hover */
+  // const [secondary4, setSecondary4] = useState(false);
+  // const [main4, setMain4] = useState(true);
+  // const ref4 = useRef(null);
 
-      return () => {
-        node.addEventListener("mouseenter", func);
-        node.addEventListener("mouseleave", func2);
-      };
-    }
-  }, [main4, secondary4]);
+  // useEffect(() => {
+  //   const node = ref4.current;
 
-  /* fifth image hover */
-  const [secondary5, setSecondary5] = useState(false);
-  const [main5, setMain5] = useState(true);
-  const ref5 = useRef(null);
+  //   function func() {
+  //     setSecondary4(true);
+  //     setMain4(false);
+  //   }
 
-  useEffect(() => {
-    const node = ref5.current;
+  //   function func2() {
+  //     setSecondary4(false);
+  //     setMain4(true);
+  //   }
 
-    function func() {
-      setSecondary5(true);
-      setMain5(false);
-    }
+  //   if (node) {
+  //     node.addEventListener("mouseenter", func);
+  //     node.addEventListener("mouseleave", func2);
 
-    function func2() {
-      setSecondary5(false);
-      setMain5(true);
-    }
+  //     return () => {
+  //       node.addEventListener("mouseenter", func);
+  //       node.addEventListener("mouseleave", func2);
+  //     };
+  //   }
+  // }, [main4, secondary4]);
 
-    if (node) {
-      node.addEventListener("mouseenter", func);
-      node.addEventListener("mouseleave", func2);
+  // /* fifth image hover */
+  // const [secondary5, setSecondary5] = useState(false);
+  // const [main5, setMain5] = useState(true);
+  // const ref5 = useRef(null);
 
-      return () => {
-        node.addEventListener("mouseenter", func);
-        node.addEventListener("mouseleave", func2);
-      };
-    }
-  }, [main5, secondary5]);
+  // useEffect(() => {
+  //   const node = ref5.current;
+
+  //   function func() {
+  //     setSecondary5(true);
+  //     setMain5(false);
+  //   }
+
+  //   function func2() {
+  //     setSecondary5(false);
+  //     setMain5(true);
+  //   }
+
+  //   if (node) {
+  //     node.addEventListener("mouseenter", func);
+  //     node.addEventListener("mouseleave", func2);
+
+  //     return () => {
+  //       node.addEventListener("mouseenter", func);
+  //       node.addEventListener("mouseleave", func2);
+  //     };
+  //   }
+  // }, [main5, secondary5]);
 
   return (
     <div>
-      <div className="carousel-inner-wrap">
+      <div className="carousel-inner-wrap test1">
         {/* images */}
         <div className="c1">
           <img src={carousel1} alt="" />
@@ -165,143 +183,115 @@ export default function CarouselP1() {
         {/* c1 overlay */}
         <div className="c1-overlay">
           <div>
-            <span>NEW PRODUCTS</span>
+            {text1 ? <div className="m3">NEW PRODUCTS</div> : null}
             <br />
-            <span>
-              See more{" "}
-              <i className="arrow-menu-right-c1 down-menu-right-c1"></i>
-            </span>
+            {text1 ? (
+              <div className="t2 m4">
+                <div className="texte">See more </div>
+
+                <div className="svg">
+                  <svg>
+                    <defs>
+                      <marker
+                        id="m"
+                        markerWidth="4"
+                        markerHeight="8"
+                        refX="0"
+                        refY="1"
+                        viewBox="0 0 1 2"
+                      >
+                        <polygon points="0,0 0,1 0,2" fill="white" />
+                      </marker>
+                    </defs>
+                    <line
+                      x1="0"
+                      y1="50%"
+                      x2="100%"
+                      y2="50%"
+                      strokeWidth="2"
+                      markerEnd="url(#m)"
+                      stroke="white"
+                    />
+                  </svg>
+                </div>
+                <div className="a-head">
+                  <i className="arrow-menu-right-c1 down-menu-right-c1"></i>
+                </div>
+              </div>
+            ) : null}
           </div>
         </div>
 
-        {main ? (
-          <div ref={ref1} className="c2">
-            <img src={carousel2p2} alt="" />
-            <div className="text">
-              <div>
-                360 Rotating Handles
-                <br />
-                (Knurled)
-              </div>
-              <div>Strength Shop</div>
-              <div>£49.99</div>
-              <div>Inc. VAT</div>
-            </div>
-          </div>
-        ) : null}
-
-        {secondary ? (
-          <div ref={ref1} className="c2 c2-drop">
-            <img src={carousel2p1} alt="" />
-            <div className="text">
-              <div>
-                360 Rotating Handles
-                <br />
-                (Knurled)
-              </div>
-              <div>Strength Shop</div>
-              <div>£49.99</div>
-              <div>Inc. VAT</div>
-            </div>
+        {/* image 2 */}
+        <div className="c2">
+          <div className="img2"></div>
+          <div className="text">
             <div>
-              <HoverDropdownButton1 />
+              360 Rotating Handles
+              <br />
+              (Knurled)
             </div>
+            <div>Strength Shop</div>
+            <div>£49.99</div>
+            <div>Inc. VAT</div>
           </div>
-        ) : null}
-
-        {main2 ? (
-          <div ref={ref2} className="c2">
-            <img src={carousel3p2} alt="" />
-            <div className="text">
-              <div>
-                Notorious Lift -Notorious
-                <br />
-                Lifters Gen 2 - All Over Wave
-              </div>
-              <div>Notorious Lift</div>
-              <div>£59.99</div>
-              <div>Inc. VAT</div>
-            </div>
-          </div>
-        ) : null}
-
-        {secondary2 ? (
-          <div ref={ref2} className="c2">
-            <img src={measurement} alt="" />
-            <div className="text">
-              <div>
-                Notorious Lift -Notorious
-                <br />
-                Lifters Gen 2 - All Over Wave
-              </div>
-              <div>Notorious Lift</div>
-              <div>£59.99</div>
-              <div>Inc. VAT</div>
-            </div>
-          </div>
-        ) : null}
-
-        {main3 ? (
-          <div ref={ref3} className="c2">
-            <img src={carousel4} alt="" />
-            <div className="text">
-              <div>
-                Notorious Lift - Notorious
-                <br />
-                Lifters Gen 2 - Pagoda
-              </div>
-              <div>Notorious Lift</div>
-              <div>£59.99</div>
-              <div>Inc. VAT</div>
-            </div>
-          </div>
-        ) : null}
-        {secondary3 ? (
-          <div ref={ref3} className="c2">
-            <img src={measurement} alt="" />
-            <div className="text">
-              <div>
-                Notorious Lift - Notorious
-                <br />
-                Lifters Gen 2 - Pagoda
-              </div>
-              <div>Notorious Lift</div>
-              <div>£59.99</div>
-              <div>Inc. VAT</div>
-            </div>
-          </div>
-        ) : null}
-
-        {main4 ? (
-          <div ref={ref4} className="c2">
-            <img src={carousel5p1} alt="" />
-            <div className="text">
-              <div>
-                Sandwich J-Hooks (Pair) -<br />
-                60mm
-              </div>
-              <div>Strength Shop</div>
-              <div>£89.99</div>
-              <div>Inc. VAT</div>
-            </div>
-          </div>
-        ) : null}
-
-        {secondary4 ? (
-          <div ref={ref4} className="c2">
-            <img src={carousel5p2} alt="" />
-            <div className="text">
-              <div>
-                Sandwich J-Hooks (Pair) -<br />
-                60mm
-              </div>
-              <div>Strength Shop</div>
-              <div>£89.99</div>
-              <div>Inc. VAT</div>
-            </div>
+          <div className="drop1">
             <HoverDropdownButton1 />
           </div>
-        ) : null}
+        </div>
+
+        {/* image 3 */}
+        <div className="c2 c3">
+          <div className="img3"></div>
+          <div className="text">
+            <div>
+              Notorious Lift -Notorious
+              <br />
+              Lifters Gen 2 - All Over Wave
+            </div>
+            <div>Notorious Lift</div>
+            <div>£59.99</div>
+            <div>Inc. VAT</div>
+          </div>
+          <div className="drop1">
+            <HoverDropdownButton2 />
+          </div>
+        </div>
+
+        {/* image 4 */}
+        <div className="c2 c3">
+          <div className="img4"></div>
+          <div className="text">
+            <div>
+              Notorious Lift - Notorious
+              <br />
+              Lifters Gen 2 - Pagoda
+            </div>
+            <div>Notorious Lift</div>
+            <div>£59.99</div>
+            <div>Inc. VAT</div>
+          </div>
+          <div className="drop1">
+            <HoverDropdownButton2 />
+          </div>
+        </div>
+
+        {/* image 5 */}
+        <div className="c2">
+          <div className="img5"></div>
+          <div className="text">
+            <div>
+              Sandwich J-Hooks (Pair) -<br />
+              60mm
+            </div>
+            <div>Strength Shop</div>
+            <div>£89.99</div>
+            <div>Inc. VAT</div>
+          </div>
+          <div className="drop1">
+            <HoverDropdownButton1 />
+          </div>
+        </div>
       </div>
     </div>
   );

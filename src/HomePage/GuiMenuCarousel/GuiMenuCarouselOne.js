@@ -48,8 +48,6 @@ export default function GuiMenuCarouselOne() {
     if (index >= 0) {
       setIndex((prevIndex) => prevIndex + 1);
     } else if (index <= 0) setIndex(comps.length + 1);
-    if (index === 2) {
-    }
   }
 
   return (

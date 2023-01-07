@@ -15,24 +15,39 @@
 }
 /* main wrap div */
 .carousel-inner-wrap {
-  width: 84.5em;
-  height: 25.1em;
+  width: 100%;
+  height: 27em;
   display: grid;
-  grid-template-columns: repeat(5, minmax(200px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 1.3em;
   position: relative;
 }
 
 .outer {
+  position: relative;
   display: flex;
-  width: 100%;
+  width: 253.5em;
   transition: ease 400ms;
   -webkit-transition: ease 400ms;
   -moz-transition: ease 400ms;
   -ms-transition: ease 400ms;
   -o-transition: ease 400ms;
 }
-
+.inner {
+  width: 100%;
+  height: 24.5em;
+}
+.test1 {
+  position: absolute;
+}
+.test2 {
+  position: absolute;
+  left: 100%;
+}
+.test3 {
+  position: absolute;
+  left: 200%;
+}
 .c2-black {
   width: 100px;
   height: 100px;
@@ -69,22 +84,16 @@
 .c1-overlay:hover {
   cursor: pointer;
 }
-.c1-overlay span {
-  color: #ffffff;
-  line-height: 1.7;
-}
-.c1-overlay div {
-  padding: 1.8em 0 0 1.5em;
-}
-.c1-overlay span:nth-child(1) {
+
+.c1-overlay .m3 {
+  padding-top: 1em;
+  padding-left: 1em;
+  color: #fff;
   font-size: var(--font-size-heading-3);
   font-weight: 700;
   font-family: Arimo, sans-serif;
 }
-.c1-overlay span:nth-child(2) {
-  font-weight: 400;
-  font-size: var(--font-size-body);
-}
+
 /* c1 arrow */
 .arrow-menu-right-c1 {
   border: solid #fff;
@@ -117,10 +126,6 @@
 }
 .c2:hover {
   cursor: grab;
-}
-.text {
-  margin-left: 1em;
-  line-height: 1.3125;
 }
 .text div:nth-of-type(1):hover {
   cursor: pointer;
@@ -277,10 +282,16 @@
 
 @media only screen and (max-width: 1500px) {
   .Rarrow {
-    left: 97.8%;
+    left: 97.3%;
   }
   .Larrow {
-    right: 97.8%;
+    left: -1%;
+  }
+  .left-button-opacity {
+    left: -1%;
+  }
+  .right-button-opacity {
+    left: 97.3%;
   }
 }
 
@@ -313,7 +324,349 @@
   margin: 0;
 }
 
-.c2-drop {
-  border-bottom: none;
-  box-shadow: none;
+/* carousel main images */
+.img2 {
+  margin: 1em;
+  flex-basis: 60%;
+  background-repeat: no-repeat;
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-2-p2.avif");
+}
+.img3 {
+  margin: 1em;
+  flex-basis: 60%;
+  background-repeat: no-repeat;
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-3-p2.avif");
+}
+.img4 {
+  margin: 1em;
+  flex-basis: 60%;
+  background-repeat: no-repeat;
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-4.avif");
+}
+.img5 {
+  margin: 1em;
+  flex-basis: 60%;
+  background-repeat: no-repeat;
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-5-p1.avif");
+}
+.img6 {
+  margin: 1em;
+  flex-basis: 60%;
+  background-repeat: no-repeat;
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-5-p1.avif");
+}
+.img7 {
+  margin: 1em;
+  flex-basis: 60%;
+  background-repeat: no-repeat;
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-6-p1.avif");
+}
+.img8 {
+  margin: 1em;
+  flex-basis: 60%;
+  background-repeat: no-repeat;
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-7-p1.webp");
+}
+.img9 {
+  margin: 1em;
+  flex-basis: 60%;
+  background-repeat: no-repeat;
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-8-p1.avif");
+}
+.img10 {
+  margin: 1em;
+  flex-basis: 60%;
+  background-repeat: no-repeat;
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-9-p1.avif");
+}
+.img11 {
+  margin: 1em;
+  flex-basis: 60%;
+  background-repeat: no-repeat;
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-10-p1.webp");
+}
+.img12 {
+  margin: 1em;
+  flex-basis: 60%;
+  background-repeat: no-repeat;
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-10-p1.webp");
+}
+.img13 {
+  margin: 1em;
+  flex-basis: 60%;
+  background-repeat: no-repeat;
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-11.avif");
+}
+.img14 {
+  margin: 1em;
+  flex-basis: 60%;
+  background-repeat: no-repeat;
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-14.webp");
+}
+.img15 {
+  margin: 1em;
+  flex-basis: 60%;
+  background-repeat: no-repeat;
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-13.webp");
+}
+
+.text {
+  width: 100%;
+  flex-basis: 40%;
+  line-height: 1.3125;
+  padding-left: 1em;
+  position: fixed;
+  top: 63.4%;
+}
+
+/* drop-down hover */
+.c2 .drop1 {
+  position: absolute;
+  top: 88.5%;
+  left: 5.4%;
+  opacity: 1;
+  animation: 0s linear 0.1s forwards fadeOut;
+  -webkit-animation: 0s linear 0.1s forwards fadeOut;
+}
+.c3 .drop1 {
+  position: absolute;
+  top: 78.3% !important;
+  left: 2.3%;
+  opacity: 1;
+  animation: 0s linear 0.1s forwards fadeOut;
+  -webkit-animation: 0s linear 0.1s forwards fadeOut;
+}
+.c2 {
+  height: 100%;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.c2:hover .drop1 {
+  opacity: 0;
+  transition-delay: visibility 1s;
+  position: absolute;
+  top: 88.5%;
+  left: 5.4%;
+  flex-basis: 10%;
+  z-index: 50;
+  animation: 0s linear 0.1s forwards fadeIn;
+  -webkit-animation: 0s linear 0.1s forwards fadeIn;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.c2:hover .text {
+  flex-basis: 38%;
+}
+.c3:hover .text {
+  flex-basis: 36.4% !important;
+}
+.c2 {
+  height: 100%;
+}
+.c2:hover {
+  height: 111% !important;
+  box-shadow: 1px 3px 4px 1px #8080801c;
+  transition: height 0.2s ease-in-out;
+  -webkit-transition: height 0.2s ease-in-out;
+  -moz-transition: height 0.2s ease-in-out;
+  -ms-transition: height 0.2s ease-in-out;
+  -o-transition: height 0.2s ease-in-out;
+}
+.c3:hover {
+  height: 122.5% !important;
+  box-shadow: 1px 3px 4px 1px #8080801c;
+}
+.c3:hover .drop1 {
+  top: 79% !important;
+  left: 2.3%;
+}
+
+@media only screen and (max-width: 1370px) {
+ .c2:hover .drop1{
+  left: 3.8%;
+ }
+ .c3:hover .drop1{
+  left: 1.5%;
+ }
+ .c2 .drop1{
+  left: 3.8%;
+ }
+ .c3 .drop1{
+  left: 1.5%;
+ }
+}
+
+@media only screen and (max-width: 1350px) {
+  .c2:hover .drop1{
+   left: 3%;
+  }
+  .c3:hover .drop1{
+   left: .55%;
+  }
+  .c2 .drop1{
+   left: 3%;
+  }
+  .c3 .drop1{
+   left: .55%;
+  }
+ }
+
+ @media only screen and (max-width: 1320px) {
+  .c2:hover .drop1{
+   left: 1.5%;
+  }
+  .c3:hover .drop1{
+   left: -.65%;
+  }
+  .c2 .drop1{
+   left: 1.5%;
+  }
+  .c3 .drop1{
+   left: -.65%;
+  }
+ }
+ @media only screen and (max-width: 1310px) {
+
+  .c3:hover .drop1{
+   left: -1%;
+  }
+  
+  .c3 .drop1{
+   left: -1%;
+  }
+ }
+
+.c2:hover .img2 {
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-2-p1.avif");
+}
+.c2:hover .img3 {
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/rsz_test.jpg");
+}
+.c2:hover .img4 {
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/rsz_test.jpg");
+}
+.c2:hover .img5 {
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-5-p2.avif");
+}
+.c2:hover .img6 {
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-5-p2.avif");
+}
+.c2:hover .img7 {
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-6-p2.avif");
+}
+.c2:hover .img8 {
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-7-p2.avif");
+}
+.c2:hover .img9 {
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-8-p2.avif");
+}
+.c2:hover .img10 {
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-9-p2.avif");
+}
+.c2:hover .img11 {
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-10-p2.webp");
+}
+.c2:hover .img12 {
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/carousel-10-p2.webp");
+}
+.c2:hover .img13 {
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/rsz_test.jpg");
+}
+.c2:hover .img14 {
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/rsz_test.jpg");
+}
+
+.c2:hover .img15 {
+  background-image: url("/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarousel/Images/rsz_test.jpg");
+}
+
+svg {
+  width: 0px;
+  height: 20px;
+  transition: width 0.3s ease;
+  overflow: visible;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  -ms-transition: width 0.3s ease;
+  -o-transition: width 0.3s ease;
+}
+.c1-overlay:hover svg {
+  width: 15px;
+}
+
+.texte {
+  color: #fff;
+  font-weight: 400;
+  font-size: var(--font-size-body);
+}
+.t2 {
+  display: flex;
+  margin-left: 1.35em;
+  margin-top: -0.55em;
+}
+.svg {
+  z-index: 3;
+  padding-left: 0.6em;
+}
+.a-head i {
+  z-index: -1;
+  margin-left: -0.8em;
+}
+.a-head {
+  padding-left: 0.4em;
+}
+
+.m3 {
+  animation: fadeInAnimation ease 0.4s;
+  animation-iteration-count: 1;
+  -webkit-animation: fadeInAnimation ease 0.4s;
+}
+.m4 {
+  animation: opacity ease 1.5s;
+  -webkit-animation: opacity ease 1.5s;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(1em);
+    -webkit-transform: translateY(1em);
+    -moz-transform: translateY(1em);
+    -ms-transform: translateY(1em);
+    -o-transform: translateY(1em);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
 }
