@@ -57,7 +57,7 @@
   top: 2.3em;
   width: 13.8em;
   overflow: hidden;
-  height: 20em;
+  height: 18.8em;
   border-radius: 0.2em;
   -webkit-border-radius: 0.2em;
   -moz-border-radius: 0.2em;
@@ -94,6 +94,7 @@
   position: absolute;
   top: -560%;
   left: 11%;
+  height: 20em;
   border: 0.5px solid #d2d2d2;
   border-bottom: none;
 }

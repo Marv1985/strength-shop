@@ -50,6 +50,9 @@
   -webkit-animation: opacity 1s ease;
 }
 .hover-buttons2 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   white-space: nowrap;
   border: 1px solid #dddddd;
   box-shadow: none;

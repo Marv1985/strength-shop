@@ -152,10 +152,12 @@
   font-family: Arimo, sans-serif;
   font-style: normal;
   font-weight: 700;
+  margin-top: 0.5em;
+  line-height: 0.4;
 }
 .equipment-overlay2 .m2 {
   font-size: var(--font-size-body-large);
-  line-height: 0.4;
+  line-height: 1.4;
 }
 /* sleeves image overlays */
 .sleeves-overlay1 {
@@ -196,10 +198,13 @@
   font-family: Arimo, sans-serif;
   font-style: normal;
   font-weight: 700;
+  margin-top: -0.15em;
+  margin-bottom: -0.4em;
+  line-height: 1.4;
 }
 .sleeves-overlay2 .m2 {
   font-size: var(--font-size-body-large);
-  line-height: 0.2;
+  line-height: 1.2;
 }
 
 /* bars image overlays */
@@ -227,21 +232,22 @@
   color: #ffffff;
   padding: 1.9em;
   margin-right: 45em;
-  overflow-wrap: break-word;
 }
 .bars-overlay2:hover {
   cursor: pointer;
 }
 .bars-overlay2 .m1 {
   font-size: var(--font-size-heading-2);
-
   font-family: Arimo, sans-serif;
   font-style: normal;
   font-weight: 700;
+  margin-top: 0.56em;
+  line-height: 0.4;
 }
 .bars-overlay2 .m2 {
   font-size: var(--font-size-body-medium);
-  line-height: 0.2;
+  overflow-wrap: break-word;
+  line-height: 1.2;
 }
 
 /* weights image overlays */
@@ -278,10 +284,12 @@
   font-family: Arimo, sans-serif;
   font-style: normal;
   font-weight: 700;
+  margin-bottom: -0.4em;
+  line-height: 1.2;
 }
 .weights-overlay2 .m2 {
   font-size: var(--font-size-body-medium);
-  line-height: 0.2;
+  line-height: 1.2;
 }
 
 /* text animation */

@@ -15,8 +15,8 @@ export default function GuiMenu() {
       setShrunk((isShrunk) => {
         if (
           !isShrunk &&
-          (document.body.scrollTop > 180 ||
-            document.documentElement.scrollTop > 180)
+          (document.body.scrollTop > 350 ||
+            document.documentElement.scrollTop > 350)
         ) {
           setText1(true);
           return true;

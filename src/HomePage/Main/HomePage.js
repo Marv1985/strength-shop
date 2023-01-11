@@ -4,6 +4,7 @@ import NavBar from "../NavBar/Components/NavBar";
 import ImageSlider from "../ImageSlider/ImageSlider";
 import ExtraInfoBar from "../ExtraInfoBar/ExtraInfoBar";
 import GuiMenu from "../GuiMenu/GuiMenu";
+import SecondGuiMenu from "../../SecondGuiMenu/SecondGuiMenu";
 import GuiMenuCarouselOne from "../GuiMenuCarousel/GuiMenuCarouselOne";
 import "/home/marv/react-projects/strength-shop/src/HomePage/Main/homePage.css";
 
@@ -21,6 +22,7 @@ export default function HomePage() {
         <ExtraInfoBar />
         <GuiMenu />
         <GuiMenuCarouselOne />
+        <SecondGuiMenu />
       </div>
     </div>
   );
