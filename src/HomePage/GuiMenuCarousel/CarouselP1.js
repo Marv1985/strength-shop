@@ -3,6 +3,7 @@ import HoverDropdownButton1 from "./HoverButtons/HoverDropdownButton1";
 import { HoverDropdownButton2 } from "./HoverButtons/HoverDropdownButton2";
 import React from "react";
 import { useEffect, useState } from "react";
+import one from "/home/marv/react-projects/strength-shop/src/HomePage/GuiMenuCarouselTwo/Images/1.avif";
 
 export default function CarouselP1() {
   /* detect width */
@@ -57,12 +58,18 @@ export default function CarouselP1() {
       <div className="carousel-inner-wrap test1">
         {/* images */}
         <div className="c1">
-          <img src={carousel1} alt="" />
+          <img className="dis-none" src={carousel1} alt="" />
+          <img src={one} alt="alternative img" />
         </div>
         {/* c1 overlay */}
         <div className="c1-overlay">
           <div>
-            {text1 ? <div className="m3">NEW PRODUCTS</div> : null}
+            {text1 ? (
+              <div className="dis-two">
+                <div className="m3">NEW PRODUCTS</div>
+                <div className="m3">STRONGMAN</div>
+              </div>
+            ) : null}
             <br />
             {text1 ? (
               <div className="t2 m4">
@@ -102,14 +109,22 @@ export default function CarouselP1() {
         </div>
 
         {/* image 2 */}
-        <div className={widthMenu2 ? "c2 adjust" : "c2"}>
+        <div className={widthMenu2 ? "c2 adjust d2" : "c2 d2"}>
           <div className="img2"></div>
-          <div className="text">
+          <div className="im2"></div>
+          <div className="text text1">
             <div>360 Rotating Handles (Knurled)</div>
             <div>Strength Shop</div>
             <div>£49.99</div>
             <div>Inc. VAT</div>
           </div>
+          {/* second carousel text */}
+          <div className="text text2">
+            <div>Double Layer Strongman Sandbags</div>
+            <div>Strength Shop</div>
+            <div>£59.99 - £89.99</div>
+            <div>Inc. VAT</div>
+          </div>
           {widthMenu2 ? (
             <div className="drop1">
               <HoverDropdownButton2 />
@@ -119,43 +134,76 @@ export default function CarouselP1() {
               <HoverDropdownButton1 />
             </div>
           )}
+          <div className="drop3">
+            <HoverDropdownButton2 />
+          </div>
         </div>
 
         {/* image 3 */}
-        <div className="c2 c3 adjust">
+        <div className="c2 c3 adjust d1">
           <div className="img3"></div>
-          <div className="text">
+          <div className="im3"></div>
+          <div className="text text1">
             <div>Notorious Lift -Notorious Lifters Gen 2 - All Over Wave</div>
             <div>Notorious Lift</div>
             <div>£59.99</div>
             <div>Inc. VAT</div>
           </div>
-          <div className="drop1">
-            <HoverDropdownButton2 />
-          </div>
-        </div>
-
-        {/* image 4 */}
-        <div className="c2 c3 adjust">
-          <div className="img4"></div>
-          <div className="text">
-            <div>Notorious Lift - Notorious Lifters Gen 2 - Pagoda</div>
-            <div>Notorious Lift</div>
-            <div>£59.99</div>
+          {/* second carousel text */}
+          <div className="text text2">
+            <div>Throwing Sandbags</div>
+            <div>Strength Shop</div>
+            <div>£84.99</div>
             <div>Inc. VAT</div>
           </div>
           <div className="drop1">
             <HoverDropdownButton2 />
           </div>
+          <div className="drop2">
+            <HoverDropdownButton1 />
+          </div>
+        </div>
+
+        {/* image 4 */}
+        <div className="c2 c3 adjust d1">
+          <div className="img4"></div>
+          <div className="im4"></div>
+          <div className="text text1">
+            <div>Notorious Lift - Notorious Lifters Gen 2 - Pagoda</div>
+            <div>Notorious Lift</div>
+            <div>£59.99</div>
+            <div>Inc. VAT</div>
+          </div>
+          {/* second carousel text */}
+          <div className="text text2">
+            <div>Adjustable Yoke Training Station</div>
+            <div>Strength Shop</div>
+            <div>£279.99</div>
+            <div>Inc. VAT</div>
+          </div>
+          <div className="drop1">
+            <HoverDropdownButton2 />
+          </div>
+          <div className="drop2">
+            <HoverDropdownButton1 />
+          </div>
         </div>
 
         {/* image 5 */}
-        <div className={widthMenu2 ? "c2 adjust" : "c2"}>
+        <div className={widthMenu2 ? "c2 adjust d1" : "c2 d1"}>
           <div className="img5"></div>
-          <div className="text">
+          <div className="im5"></div>
+          <div className="text text1">
             <div>Sandwich J-Hooks (Pair) - 60mm</div>
             <div>Strength Shop</div>
             <div>£89.99</div>
+            <div>Inc. VAT</div>
+          </div>
+          {/* second carousel text */}
+          <div className="text text2">
+            <div>Riot Yoke</div>
+            <div>Strength Shop</div>
+            <div>£449.99</div>
             <div>Inc. VAT</div>
           </div>
           {widthMenu2 ? (
@@ -167,6 +215,9 @@ export default function CarouselP1() {
               <HoverDropdownButton1 />
             </div>
           )}
+          <div className="drop2">
+            <HoverDropdownButton1 />
+          </div>
         </div>
       </div>
     </div>

@@ -14,7 +14,7 @@
   height: 36.2em;
   width: 84.5em;
   margin-top: -5.6em;
-  margin-bottom: 10em;
+  margin-bottom: 2em;
   position: relative;
 }
 
@@ -290,5 +290,37 @@
     color: #ffffff;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.23);
+  }
+}
+
+.sec-menu-overlay1-p2 {
+  margin-top: -0.1em;
+  line-height: 1.1;
+}
+
+.sec-menu-overlay1-p2,
+.sec-menu-overlay2-p2,
+.sec-menu-overlay3-p2 {
+  animation: fadeInAnimation ease 0.7s;
+  animation-iteration-count: 1;
+  -webkit-animation: fadeInAnimation ease 0.7s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(1em);
+    -webkit-transform: translateY(1em);
+    -moz-transform: translateY(1em);
+    -ms-transform: translateY(1em);
+    -o-transform: translateY(1em);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
   }
 }

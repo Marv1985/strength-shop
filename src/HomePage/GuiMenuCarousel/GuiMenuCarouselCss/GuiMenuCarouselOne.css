@@ -96,6 +96,13 @@
   height: 100px;
   background: black;
 }
+/* second carousel display none */
+.dis-two div:nth-of-type(2) {
+  display: none;
+}
+.text2 {
+  display: none;
+}
 
 /* first image on carousel */
 .c1 {

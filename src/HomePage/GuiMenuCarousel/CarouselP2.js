@@ -32,12 +32,20 @@ export default function CarouselP2() {
   return (
     <div>
       <div className="carousel-inner-wrap test2">
-        <div className={widthMenu2 ? "c2 adjust" : "c2"}>
-          <div className="img6"></div>
-          <div className="text">
+        <div className={widthMenu2 ? "c2 adjust" : "c2 d1"}>
+          <div className="dis-none img6"></div>
+          <div className="im6"></div>
+          <div className="text text1">
             <div>Sandwich J-Hooks (Pair) - 75mm</div>
             <div>Strength Shop</div>
             <div>£89.99</div>
+            <div>Inc. VAT</div>
+          </div>
+          {/* second carousel text */}
+          <div className="text text2">
+            <div>Steel Log 220mm Diameter</div>
+            <div>Strength Shop</div>
+            <div>£219.99</div>
             <div>Inc. VAT</div>
           </div>
           {widthMenu2 ? (
@@ -49,11 +57,15 @@ export default function CarouselP2() {
               <HoverDropdownButton1 />
             </div>
           )}
+          <div className="drop2">
+            <HoverDropdownButton1 />
+          </div>
         </div>
 
-        <div className="c2 c3 adjust">
-          <div className="img7"></div>
-          <div className="text">
+        <div className="c2 c3 adjust d1">
+          <div className="dis-none img7"></div>
+          <div className="im7"></div>
+          <div className="text text1">
             <div>
               7mm Inferno Neoprene Knee Sleeves - Blue-Grey - IPF Approved
               (Pair)
@@ -62,14 +74,25 @@ export default function CarouselP2() {
             <div>£44.99</div>
             <div>Inc. VAT</div>
           </div>
+          {/* second carousel text */}
+          <div className="text text2">
+            <div>Riot Competition Steel Strongman Log</div>
+            <div>Strength Shop</div>
+            <div>£369.99</div>
+            <div>Inc. VAT</div>
+          </div>
           <div className="drop1">
             <HoverDropdownButton2 />
           </div>
+          <div className="drop2">
+            <HoverDropdownButton1 />
+          </div>
         </div>
 
-        <div className="c2 c3 adjust">
-          <div className="img8"></div>
-          <div className="text">
+        <div className="c2 c3 adjust d2">
+          <div className="dis-none img8"></div>
+          <div className="im8"></div>
+          <div className="text text1">
             <div>
               7mm Inferno Neoprene Knee Sleeves - Dark Leopard - IPF Approved
               (Pair)
@@ -78,14 +101,25 @@ export default function CarouselP2() {
             <div>£44.99</div>
             <div>Inc. VAT</div>
           </div>
+          {/* second carousel text */}
+          <div className="text text2">
+            <div>Hybrid Atlas Stone Moulds</div>
+            <div>Strength Shop</div>
+            <div>£114.99 - £134.99</div>
+            <div>Inc. VAT</div>
+          </div>
           <div className="drop1">
+            <HoverDropdownButton2 />
+          </div>
+          <div className="drop3">
             <HoverDropdownButton2 />
           </div>
         </div>
 
-        <div className={widthMenu2 ? "c2 adjust" : "c2"}>
-          <div className="img9"></div>
-          <div className="text">
+        <div className={widthMenu2 ? "c2 adjust" : "c2 d2"}>
+          <div className="dis-none img9"></div>
+          <div className="im9"></div>
+          <div className="text text1">
             <div>
               Z
               <span className="skull">
@@ -97,29 +131,11 @@ export default function CarouselP2() {
             <div>£32.99</div>
             <div>Inc. VAT</div>
           </div>
-          {widthMenu2 ? (
-            <div className="drop1">
-              <HoverDropdownButton2 />
-            </div>
-          ) : (
-            <div className="drop1">
-              <HoverDropdownButton1 />
-            </div>
-          )}
-        </div>
-
-        <div className={widthMenu2 ? "c2 adjust" : "c2"}>
-          <div className="img10"></div>
-          <div className="text">
-            <div>
-              Z
-              <span className="skull">
-                <img src={skull} alt="" />
-              </span>
-              NE Bear Down Steel Blood - Smelling Salts
-            </div>
-            <div>Zone</div>
-            <div>£34.99</div>
+          {/* second carousel text */}
+          <div className="text text2">
+            <div>Circus Dumbells 20kg-78kg</div>
+            <div>Strength Shop</div>
+            <div>£59.99 - £249.99</div>
             <div>Inc. VAT</div>
           </div>
           {widthMenu2 ? (
@@ -131,6 +147,45 @@ export default function CarouselP2() {
               <HoverDropdownButton1 />
             </div>
           )}
+          <div className="drop3">
+            <HoverDropdownButton2 />
+          </div>
+        </div>
+
+        <div className={widthMenu2 ? "c2 adjust" : "c2 d1"}>
+          <div className="dis-none img10"></div>
+          <div className="im10"></div>
+          <div className="text text1">
+            <div>
+              Z
+              <span className="skull">
+                <img src={skull} alt="" />
+              </span>
+              NE Bear Down Steel Blood - Smelling Salts
+            </div>
+            <div>Zone</div>
+            <div>£34.99</div>
+            <div>Inc. VAT</div>
+          </div>
+          {/* second carousel text */}
+          <div className="text text2">
+            <div>Riot Monster Loadable Dumbell</div>
+            <div>Strength Shop</div>
+            <div>£199.99</div>
+            <div>Inc. VAT</div>
+          </div>
+          {widthMenu2 ? (
+            <div className="drop1">
+              <HoverDropdownButton2 />
+            </div>
+          ) : (
+            <div className="drop1">
+              <HoverDropdownButton1 />
+            </div>
+          )}
+          <div className="drop2">
+            <HoverDropdownButton1 />
+          </div>
         </div>
       </div>
     </div>
