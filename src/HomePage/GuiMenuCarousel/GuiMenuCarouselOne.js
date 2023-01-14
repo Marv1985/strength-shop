@@ -62,6 +62,30 @@ export default function GuiMenuCarouselOne() {
       if (widthMenu < 730) {
         element.style.transform = `translateX(15%)`;
       }
+      if (widthMenu < 665) {
+        element.style.transform = `translateX(17%)`;
+      }
+      if (widthMenu < 630) {
+        element.style.transform = `translateX(18%)`;
+      }
+      if (widthMenu < 580) {
+        element.style.transform = `translateX(20%)`;
+      }
+      if (widthMenu < 550) {
+        element.style.transform = `translateX(21%)`;
+      }
+      if (widthMenu < 510) {
+        element.style.transform = `translateX(22%)`;
+      }
+      if (widthMenu < 485) {
+        element.style.transform = `translateX(23%)`;
+      }
+      if (widthMenu < 460) {
+        element.style.transform = `translateX(24.5%)`;
+      }
+      if (widthMenu < 420) {
+        element.style.transform = `translateX(25.5%)`;
+      }
     }
     // Trigger this function on resize
     window.addEventListener("load", reportWindowSize);
@@ -82,7 +106,6 @@ export default function GuiMenuCarouselOne() {
       const onMouseMove = (event) => {
         position.x += event.movementX;
         const element = elementRef.current;
-        console.log(position.x);
         if (element) {
           element.style.transform = `translate(${position.x}px)`;
         }

@@ -2,7 +2,6 @@
 .carousel-outer-wrap {
   padding-bottom: 10em;
   display: flex;
-  z-index: 1;
   max-width: 84.5em;
   justify-content: center;
   height: 100%;
@@ -11,6 +10,9 @@
 }
 .c2 {
   background-color: #fff;
+}
+.outer {
+  z-index: 1;
 }
 
 @media only screen and (max-width: 1120px) {
