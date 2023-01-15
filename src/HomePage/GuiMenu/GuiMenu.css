@@ -91,6 +91,7 @@
     min-height: 92em;
     gap: 0.75em;
     overflow: visible !important;
+    margin-bottom: 1.5em;
   }
   .equipment {
     width: 150%;

@@ -32,7 +32,7 @@ export default function CarouselP2() {
   return (
     <div>
       <div className="carousel-inner-wrap test2">
-        <div className={widthMenu2 ? "c2 adjust" : "c2 d1"}>
+        <div className={widthMenu2 ? "c2 adjust d1" : "c2 d1"}>
           <div className="dis-none img6"></div>
           <div className="im6"></div>
           <div className="text text1">
@@ -116,7 +116,7 @@ export default function CarouselP2() {
           </div>
         </div>
 
-        <div className={widthMenu2 ? "c2 adjust" : "c2 d2"}>
+        <div className={widthMenu2 ? "c2 adjust d2" : "c2 d2"}>
           <div className="dis-none img9"></div>
           <div className="im9"></div>
           <div className="text text1">
@@ -152,7 +152,7 @@ export default function CarouselP2() {
           </div>
         </div>
 
-        <div className={widthMenu2 ? "c2 adjust" : "c2 d1"}>
+        <div className={widthMenu2 ? "c2 adjust d1" : "c2 d1"}>
           <div className="dis-none img10"></div>
           <div className="im10"></div>
           <div className="text text1">

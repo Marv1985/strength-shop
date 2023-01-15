@@ -53,6 +53,29 @@ export default function CarouselP1() {
     return () => window.removeEventListener("scroll", onScroll);
   }, [text1, isShrunk]);
 
+  const [text2, setText2] = useState(false);
+  const [isShrunk2, setShrunk2] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setShrunk2((isShrunk2) => {
+        if (
+          !isShrunk2 &&
+          (document.body.scrollTop > 2200 ||
+            document.documentElement.scrollTop > 2200)
+        ) {
+          setText2(true);
+          return true;
+        }
+
+        return isShrunk2;
+      });
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [text2, isShrunk2]);
+
   return (
     <div>
       <div className="carousel-inner-wrap test1">
@@ -67,12 +90,46 @@ export default function CarouselP1() {
             {text1 ? (
               <div className="dis-two">
                 <div className="m3">NEW PRODUCTS</div>
-                <div className="m3">STRONGMAN</div>
+                {text2 ? <div className="m3">STRONGMAN</div> : null}
               </div>
             ) : null}
             <br />
             {text1 ? (
-              <div className="t2 m4">
+              <div className="t2 m4 dis-none">
+                <div className="texte">See more </div>
+
+                <div className="svg">
+                  <svg>
+                    <defs>
+                      <marker
+                        id="m"
+                        markerWidth="4"
+                        markerHeight="8"
+                        refX="0"
+                        refY="1"
+                        viewBox="0 0 1 2"
+                      >
+                        <polygon points="0,0 0,1 0,2" fill="white" />
+                      </marker>
+                    </defs>
+                    <line
+                      x1="0"
+                      y1="50%"
+                      x2="100%"
+                      y2="50%"
+                      strokeWidth="2"
+                      markerEnd="url(#m)"
+                      stroke="white"
+                    />
+                  </svg>
+                </div>
+                <div className="a-head">
+                  <i className="arrow-menu-right-c1 down-menu-right-c1"></i>
+                </div>
+              </div>
+            ) : null}
+            {text2 ? (
+              <div className="t2 m4 nones">
                 <div className="texte">See more </div>
 
                 <div className="svg">
