@@ -97,6 +97,8 @@ export default function GuiMenuCarouselOne() {
     };
   }, [widthMenu, elementRef]);
 
+  /* drag */
+
   const [position, setPosition] = useState({ x: 0 });
 
   const [index, setIndex] = useState(0);
