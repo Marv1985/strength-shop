@@ -381,3 +381,228 @@ input::placeholder {
   cursor: pointer;
   background-color: rgb(247, 244, 244);
 }
+
+.hamburger-menu-p2 .dropdown1 {
+  margin-top: 0;
+  left: 23.8%;
+}
+.hamburger-menu-p2 .dropdown2 {
+  margin-top: 0;
+  left: 33.6%;
+}
+.hamburger-menu-p2 .dropdown3 {
+  margin-top: 0;
+  left: 41.4%;
+}
+.hamburger-menu-p2 .dropdown4 {
+  margin-top: 0;
+}
+.hamburger-menu-p2 .dropdown5 {
+  margin-top: 0;
+  left: 59.2%;
+}
+.hamburger-menu-p2 .dropdown6 {
+  margin-top: 0;
+  left: 74%;
+}
+
+@media screen and (max-width: 1595px) {
+  .hamburger-menu-p2 .dropdown1 {
+    margin-top: 0;
+    left: 19.8%;
+  }
+  .hamburger-menu-p2 .dropdown2 {
+    margin-top: 0;
+    left: 30.9%;
+  }
+  .hamburger-menu-p2 .dropdown3 {
+    margin-top: 0;
+    left: 40%;
+  }
+  .hamburger-menu-p2 .dropdown4 {
+    margin-top: 0;
+  }
+  .hamburger-menu-p2 .dropdown5 {
+    margin-top: 0;
+    left: 60.7%;
+  }
+  .hamburger-menu-p2 .dropdown6 {
+    margin-top: 0;
+    left: 77.5%;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .hamburger-menu-p2 .dropdown1 {
+    margin-top: 0;
+    left: 18.8%;
+  }
+}
+@media screen and (max-width: 1510px) {
+  .hamburger-menu-p2 .dropdown1 {
+    margin-top: 0;
+    left: 18%;
+  }
+}
+
+@media screen and (max-width: 1490px) {
+  .hamburger-menu-p2 .dropdown1 {
+    margin-top: 0;
+    left: 17.5%;
+  }
+  .hamburger-menu-p2 .dropdown2 {
+    margin-top: 0;
+    left: 29.8%;
+  }
+  .hamburger-menu-p2 .dropdown3 {
+    margin-top: 0;
+    left: 39.5%;
+  }
+  .hamburger-menu-p2 .dropdown4 {
+    margin-top: 0;
+  }
+  .hamburger-menu-p2 .dropdown5 {
+    margin-top: 0;
+    left: 60.7%;
+  }
+  .hamburger-menu-p2 .dropdown6 {
+    margin-top: 0;
+    left: 79.5%;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .hamburger-menu-p2 .dropdown1 {
+    margin-top: 0;
+    left: 16.8%;
+  }
+}
+
+@media screen and (max-width: 1430px) {
+  .hamburger-menu-p2 .dropdown1 {
+    margin-top: 0;
+    left: 16%;
+  }
+  .hamburger-menu-p2 .dropdown2 {
+    margin-top: 0;
+    left: 29%;
+  }
+  .hamburger-menu-p2 .dropdown3 {
+    margin-top: 0;
+    left: 39%;
+  }
+  .hamburger-menu-p2 .dropdown4 {
+    margin-top: 0;
+  }
+  .hamburger-menu-p2 .dropdown5 {
+    margin-top: 0;
+    left: 61.9%;
+  }
+  .hamburger-menu-p2 .dropdown6 {
+    margin-top: 0;
+    left: 81%;
+  }
+}
+
+@media screen and (max-width: 1393px) {
+  .hamburger-menu-p2 .dropdown1 {
+    margin-top: 0;
+    left: 9.5%;
+  }
+  .hamburger-menu-p2 .dropdown2 {
+    margin-top: 0;
+    left: 22.8%;
+  }
+  .hamburger-menu-p2 .dropdown3 {
+    margin-top: 0;
+    left: 32.7%;
+  }
+  .hamburger-menu-p2 .dropdown4 {
+    margin-top: 0;
+    left: 44.9%;
+  }
+  .hamburger-menu-p2 .dropdown5 {
+    margin-top: 0;
+    left: 56%;
+  }
+  .hamburger-menu-p2 .dropdown6 {
+    margin-top: 0;
+    left: 75.5%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .hamburger-menu-p2 .dropdown5 {
+    margin-top: 0;
+    left: 60.7%;
+  }
+}
+
+@media screen and (max-width: 1232px) {
+  .hamburger-menu-p2 .dropdown3 {
+    margin-top: 0;
+    left: 35.7%;
+  }
+  .hamburger-menu-p2 .dropdown4 {
+    margin-top: 0;
+    left: 49.9%;
+  }
+  .hamburger-menu-p2 .dropdown5 {
+    margin-top: 0;
+    left: 62%;
+  }
+  .hamburger-menu-p2 .dropdown6 {
+    margin-top: 0;
+    left: 79.5%;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .hamburger-menu-p2 .dropdown1 {
+    top: 99.5%;
+    margin-top: 0;
+    left: 9.5%;
+  }
+  .hamburger-menu-p2 .dropdown2 {
+    top: 99.5%;
+    margin-top: 0;
+    left: 25.8%;
+  }
+  .hamburger-menu-p2 .dropdown3 {
+    top: 99.5%;
+    margin-top: 0;
+    left: 36.7%;
+  }
+  .hamburger-menu-p2 .dropdown4 {
+    top: 99.5%;
+    margin-top: 0;
+    left: 50.9%;
+  }
+  .hamburger-menu-p2 .dropdown5 {
+    top: 99.5%;
+    margin-top: 0;
+    left: 63.7%;
+  }
+  .hamburger-menu-p2 .dropdown6 {
+    top: 99.5%;
+    margin-top: 0;
+    left: 3%;
+  }
+}
+
+@media screen and (max-width: 1097px) {
+  .hamburger-menu-p2 .dropdown6 {
+    margin-top: 0;
+    left: 10% !important;
+  }
+}
+
+@media screen and (max-width: 1395px) {
+  .hamburger-menu-p2 .menuPadding {
+    padding-right: 0;
+    margin-left: -2.3em;
+  }
+  .hamburger-menu-p2 .dropdown3 span {
+    padding-left: 9rem;
+  }
+}

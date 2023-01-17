@@ -61,8 +61,8 @@ export default function CarouselP1() {
       setShrunk2((isShrunk2) => {
         if (
           !isShrunk2 &&
-          (document.body.scrollTop > 2200 ||
-            document.documentElement.scrollTop > 2200)
+          (document.body.scrollTop > 2100 ||
+            document.documentElement.scrollTop > 2100)
         ) {
           setText2(true);
           return true;
