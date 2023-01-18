@@ -16,7 +16,7 @@ export default function Review4() {
         <span>01/04/2023 </span>
       </div>
       <div className="review-img">
-        <img src={jogging} alt="chalk" />
+        <img src={jogging} alt="jogging bottoms" />
         <span>Jogging Suit Trousers-...</span>
       </div>
     </div>

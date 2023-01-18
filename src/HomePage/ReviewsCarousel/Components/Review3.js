@@ -16,7 +16,7 @@ export default function Review3() {
         <span>01/07/2023 </span>
       </div>
       <div className="review-img">
-        <img src={slippers} alt="chalk" />
+        <img src={slippers} alt="slippers" />
         <span>Riot Deadlift Slippers-...</span>
       </div>
     </div>
