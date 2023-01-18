@@ -42,6 +42,57 @@ export default function ReviewsCarousel() {
   const comps3 = [<Review9 />, <Review10 />, <Review11 />, <Review12 />];
   const comps4 = [<Review13 />, <Review14 />, <Review15 />, <Review16 />]; */
 
+  /* carousel 2 */
+  /* detect screen width */
+  const [widthMenu, setWidthMenu] = useState(window.innerWidth);
+  const [carousel1, setCarousel1] = useState(true);
+  const [carousel2, setCarousel2] = useState(false);
+
+  useEffect(() => {
+    function reportWindowSize() {
+      setWidthMenu(window.innerWidth);
+      if (widthMenu < 990) {
+        setCarousel1(false);
+        setCarousel2(true);
+      }
+    }
+    // Trigger this function on resize
+    window.addEventListener("load", reportWindowSize);
+    window.addEventListener("resize", reportWindowSize);
+    //  Cleanup for componentWillUnmount
+    return () => {
+      window.removeEventListener("resize", reportWindowSize);
+      window.removeEventListener("load", reportWindowSize);
+    };
+  }, [widthMenu]);
+
+  function left2() {
+    //console.log(index)
+    if (index > 0) {
+      console.log(index)
+      setIndex((prevIndex) => prevIndex - .55);
+    }
+    if (index < 0.3) {
+      setIndex(3.868);
+    }
+  }
+
+  function right2() {
+    //console.log(index)
+    if (index <= 4) {
+      console.log(index)
+      setIndex((prevIndex) => prevIndex + .55);
+    }
+    if (index > 3.4) {
+      setIndex(0);
+    }
+  }
+
+
+
+
+  /* carousel 1 */
+
   /* images auto scroll*/
   const [auto] = useState(true);
   const timeoutRef = useRef(null);
@@ -58,9 +109,22 @@ export default function ReviewsCarousel() {
       if (auto) {
         setIndex((prevIndex) => prevIndex + 0.25);
       }
-      if (index === 3) {
+      if(widthMenu < 990){
+        setIndex((prevIndex) => prevIndex + 0.305);
+      }
+      if (index >= 3.37) {
         setIndex(0);
       }
+
+    /*     // Trigger this function on resize
+    window.addEventListener("load", setTimeout);
+    window.addEventListener("resize", setTimeout);
+    //  Cleanup for componentWillUnmount
+    return () => {
+      window.removeEventListener("resize", setTimeout);
+      window.removeEventListener("load", setTimeout);
+    }; */
+     
     }, 5000);
     return () => resetTimeout();
   });
@@ -90,6 +154,7 @@ export default function ReviewsCarousel() {
 
   return (
     <div className="review-carousel-wrapper">
+      {carousel1 ? (
       <div className="review-carousel-wrapper-2">
         {/* header */}
         <div className="header">
@@ -103,12 +168,12 @@ export default function ReviewsCarousel() {
           {/* carousel */}
           <div
             className="rev-car"
-            style={{ transform: `translate3d(${-index * 40}%, 0, 0)` }}
-          >
+            style={{ transform: `translate3d(${-index * 40}%, 0, 0)` }}>
             {comps.map((com, index) => (
               <div key={index}>{com}</div>
             ))}
           </div>
+          
           {/* buttons */}
         </div>
         <div className="rev-buttons">
@@ -120,6 +185,40 @@ export default function ReviewsCarousel() {
           </button>
         </div>
       </div>
+      ): null}
+
+{carousel2 ? (
+      <div className="review-carousel-wrapper-2-p2">
+        {/* header */}
+        <div className="header">
+          <h2>WHAT OUR CUSTOMERS SAY</h2>
+          <Stars />
+          <span>from 807 reviews</span>
+        </div>
+
+        {/* main */}
+        <div className="reviews-main">
+          {/* carousel */}
+          <div
+            className="rev-car"
+            style={{ transform: `translate3d(${-index * 40}%, 0, 0)` }}>
+            {comps.map((com, index) => (
+              <div key={index}>{com}</div>
+            ))}
+          </div>
+          
+          {/* buttons */}
+        </div>
+        <div className="rev-buttons">
+          <button onClick={left2} className="left-button-2">
+            <i className="Larrow-menu-right-2 Ldown-menu-right-2"></i>
+          </button>
+          <button onClick={right2} className="right-button-2">
+            <i className="Rarrow-menu-right-2 Rdown-menu-right-2"></i>
+          </button>
+        </div>
+      </div>
+      ): null}
     </div>
   );
 }
