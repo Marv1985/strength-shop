@@ -87,6 +87,10 @@ export default function GuiMenuCarouselOne() {
         element.style.transform = `translateX(25.5%)`;
       }
     }
+
+    /* IMPORTANT! add function here so it gets called immediately on any resize */
+    reportWindowSize();
+
     // Trigger this function on resize
     window.addEventListener("load", reportWindowSize);
     window.addEventListener("resize", reportWindowSize);

@@ -55,10 +55,19 @@ export default function ReviewsCarousel() {
         setCarousel1(false);
         setCarousel2(true);
       }
+      else if(widthMenu > 990){
+        setCarousel1(true);
+        setCarousel2(false);
+      }
     }
+    
+    /* IMPORTANT! add function here so it gets called immediately on any resize */
+    reportWindowSize();
+
     // Trigger this function on resize
     window.addEventListener("load", reportWindowSize);
     window.addEventListener("resize", reportWindowSize);
+    
     //  Cleanup for componentWillUnmount
     return () => {
       window.removeEventListener("resize", reportWindowSize);
@@ -115,15 +124,6 @@ export default function ReviewsCarousel() {
       if (index >= 3.37) {
         setIndex(0);
       }
-
-    /*     // Trigger this function on resize
-    window.addEventListener("load", setTimeout);
-    window.addEventListener("resize", setTimeout);
-    //  Cleanup for componentWillUnmount
-    return () => {
-      window.removeEventListener("resize", setTimeout);
-      window.removeEventListener("load", setTimeout);
-    }; */
      
     }, 5000);
     return () => resetTimeout();
