@@ -27,7 +27,7 @@ export default function CarouselP2() {
       window.removeEventListener("resize", reportWindowSize);
       window.removeEventListener("load", reportWindowSize);
     };
-  }, [widthMenu]);
+  }, [widthMenu, widthMenu2]);
 
   return (
     <div>

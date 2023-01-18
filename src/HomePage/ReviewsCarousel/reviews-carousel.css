@@ -1,0 +1,90 @@
+.review-carousel-wrapper {
+  display: flex;
+  max-width: 96%;
+  margin-right: 15px;
+  max-height: 100%;
+  justify-content: center;
+  margin-bottom: 20em;
+}
+.review-carousel-wrapper-2 {
+  width: 50em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* header */
+.stars img {
+  min-height: 18px;
+  padding: 0.1em;
+}
+.header h2 {
+  font-size: var(--font-size-heading-2);
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.header {
+  text-align: center;
+}
+.header span {
+  text-decoration: underline;
+}
+.header span:hover {
+  text-decoration: none;
+}
+
+/* main */
+.reviews-main {
+  margin-top: 2em;
+}
+.rev-car {
+  display: flex;
+}
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.4;
+  height: 85px;
+  width: 200px;
+  overflow: hidden;
+}
+.review .stars img {
+  min-height: 21px;
+}
+.review span:nth-child(2) {
+  font-weight: 900;
+}
+.review-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+}
+.faint span:nth-of-type(1) {
+  font-size: 90%;
+  opacity: 0.6;
+}
+.faint span:nth-of-type(2) {
+  font-size: 75%;
+  opacity: 0.35;
+}
+.faint {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+.review-img:hover {
+  cursor: pointer;
+}
+.review-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 90%;
+  text-decoration: underline;
+}
+.review-img img {
+  height: 56px;
+  width: 56px;
+}

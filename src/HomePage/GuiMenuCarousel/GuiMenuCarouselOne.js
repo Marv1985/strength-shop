@@ -132,9 +132,11 @@ export default function GuiMenuCarouselOne() {
         event.preventDefault();
       };
       const onMouseUp = () => {
+        window.addEventListener("load", onMouseMove);
         document.removeEventListener("mousemove", onMouseMove);
         document.removeEventListener("mouseup", onMouseUp);
       };
+      window.addEventListener("load", onMouseMove);
       document.addEventListener("mousemove", onMouseMove);
       document.addEventListener("mouseup", onMouseUp);
     },

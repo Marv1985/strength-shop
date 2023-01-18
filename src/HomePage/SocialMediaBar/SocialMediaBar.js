@@ -65,7 +65,7 @@ export default function SocialMediaBar() {
   }, [widthMenu, elementRef]);
 
   const [position, setPosition] = useState({ x: 0 });
-  const [index, setIndex] = useState(0);
+  const [index] = useState(0);
 
   const onMouseDown = useCallback(
     (event) => {
@@ -103,7 +103,7 @@ export default function SocialMediaBar() {
       <div
         ref={elementRef}
         onMouseDown={onMouseDown}
-        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+        style={{ transform: `translate3d(${index * 100}%, 0, 0)` }}
         className="second-social-media-wrapper"
       >
         <div className="news">

@@ -28,7 +28,7 @@ export default function CarouselP1() {
       window.removeEventListener("resize", reportWindowSize);
       window.removeEventListener("load", reportWindowSize);
     };
-  }, [widthMenu]);
+  }, [widthMenu, widthMenu2]);
 
   const [text1, setText1] = useState(false);
   const [isShrunk, setShrunk] = useState(false);
@@ -48,9 +48,12 @@ export default function CarouselP1() {
         return isShrunk;
       });
     };
-
+    window.addEventListener("load", onScroll);
     window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.addEventListener("load", onScroll);
+    };
   }, [text1, isShrunk]);
 
   const [text2, setText2] = useState(false);
@@ -72,8 +75,12 @@ export default function CarouselP1() {
       });
     };
 
+    window.addEventListener("load", onScroll);
     window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.addEventListener("load", onScroll);
+    };
   }, [text2, isShrunk2]);
 
   return (
