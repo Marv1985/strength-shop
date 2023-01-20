@@ -9,6 +9,7 @@ import GuiMenuCarouselOne from "../GuiMenuCarousel/GuiMenuCarouselOne";
 import GuiMenuCarouselTwo from "../GuiMenuCarouselTwo/GuiMenuCarouselTwo";
 import SocialMediaBar from "../SocialMediaBar/SocialMediaBar";
 import ReviewsCarousel from "../ReviewsCarousel/ReviewsCarousel";
+import Footer from "../Footer/Footer";
 import "/home/marv/react-projects/strength-shop/src/HomePage/Main/homePage.css";
 
 export default function HomePage() {
@@ -29,6 +30,7 @@ export default function HomePage() {
         <GuiMenuCarouselTwo />
         <SocialMediaBar />
         <ReviewsCarousel />
+        <Footer />
       </div>
     </div>
   );

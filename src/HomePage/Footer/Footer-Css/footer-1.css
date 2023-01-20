@@ -1,0 +1,108 @@
+.footer-p1-wrapper {
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-p1-wrapper h2 {
+  font-size: var(--font-size-heading-5);
+  font-family: "Arimo", sans-serif;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+.footer-images {
+  display: flex;
+}
+.footer-images img {
+  height: 1em;
+  width: 1em;
+  padding: 0.45em;
+}
+.f {
+  height: 1.5em !important;
+  width: 1.5em !important;
+  padding: 0.3em !important;
+}
+.f-wrap {
+  margin-left: 0 !important;
+  align-items: center;
+  background-color: #dcdcdc !important;
+}
+.footer-images div:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+.footer-images div {
+  margin: 0.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* badge styling */
+.footer-badge {
+  position: relative;
+  margin-top: 1em;
+  margin: 0 auto;
+  margin-top: 0.8em;
+}
+.footer-badge:hover {
+  cursor: pointer;
+}
+.footer-badge img {
+  height: 10em;
+  width: 10em;
+}
+.badge-number {
+  position: absolute;
+  bottom: 68%;
+  color: #fff;
+  font-weight: bold;
+  left: 40%;
+  font-size: 21px;
+  font-family: "Helvetica Neue";
+}
+.footer-badge .stars img {
+  height: 0.6em;
+  width: 0.6em;
+  padding: 0 0.2em 0 0.2em;
+  opacity: 0.9;
+}
+.footer-badge .stars {
+  position: absolute;
+  bottom: 55%;
+  left: 25.7%;
+}
+.badge-text {
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  bottom: 41%;
+  left: 21%;
+  font-size: 13px;
+  font-family: "Helvetica Neue";
+}
+
+/* union jacks image */
+.union-jacks {
+  display: flex;
+  width: 12.5em;
+  height: 1em;
+  overflow: hidden;
+}
+.union-jacks img {
+  height: 32px;
+  padding: 0 0.1em 0 0.1em;
+}
+.union-jacks:hover {
+  cursor: pointer;
+}

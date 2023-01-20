@@ -4,7 +4,7 @@
   margin-right: 15px;
   max-height: 100%;
   justify-content: center;
-  margin-bottom: 20em;
+  margin-bottom: 9.5em;
   position: relative;
 }
 .review-carousel-wrapper-2 {
@@ -23,21 +23,18 @@
   align-items: center;
   overflow: hidden;
 }
-.review-carousel-wrapper-2-p2 .review-wrapper{
+.review-carousel-wrapper-2-p2 .review-wrapper {
   margin: 0 1.6em 0 1.6em;
 }
-.review-carousel-wrapper-2-p2 .right-button-2{
+.review-carousel-wrapper-2-p2 .right-button-2 {
   right: 43%;
 }
-.review-carousel-wrapper-2-p2 .left-button-2{
+.review-carousel-wrapper-2-p2 .left-button-2 {
   left: 43%;
 }
-.review-carousel-wrapper-2-p2 .rev-car{
+.review-carousel-wrapper-2-p2 .rev-car {
   margin-left: 43.65%;
 }
-
-
-
 
 /* header */
 .stars img {
@@ -85,11 +82,9 @@
   -ms-transition: ease 400ms;
   -o-transition: ease 400ms;
 }
-.rev-car2 .review-wrapper{
+.rev-car2 .review-wrapper {
   margin: 0 3em 0 3em;
 }
-
-
 
 .review {
   display: flex;
