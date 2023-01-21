@@ -1,0 +1,39 @@
+.footer-p3-wrapper {
+  flex-basis: 17%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 1.25em;
+  padding-right: 1.25em;
+}
+
+.footer-p3-wrapper h2 {
+  font-size: var(--font-size-heading-5);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  font-family: "Arimo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0;
+}
+.shop-country {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.4em;
+}
+.shop-country img {
+  height: 28px;
+  margin-right: 0.3em;
+}
+.shop-country:hover {
+  cursor: pointer;
+}
+.shop-country p {
+  margin: 0;
+  font-size: var(--font-size-body-small);
+}
+.swiss {
+  height: 18px !important;
+  margin-left: 0.25em;
+  padding-right: 0.25em;
+}

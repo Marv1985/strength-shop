@@ -1,10 +1,29 @@
 .footer-wrapper {
-  display: flex;
-  justify-content: center;
   padding-top: 3.25em;
   padding-bottom: 3.125em;
-  height: 34em;
+  height: 27.6em;
   width: 100vw;
   background: rgb(245, 245, 245);
   color: #333;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 15px;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: center;
+  width: 96%;
+  margin-left: 15px;
+}
+
+.footer-bottom {
+  display: flex;
+  margin-left: 15px;
+  width: 96%;
+  justify-content: space-around;
+  margin-right: 3.5em;
+  margin-bottom: 0.3em;
 }

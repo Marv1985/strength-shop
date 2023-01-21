@@ -1,0 +1,45 @@
+.footer-p5-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: -1em;
+}
+.footer-p5-wrapper p:hover {
+  cursor: pointer;
+}
+.foot-5-p1 {
+  width: fit-content;
+  display: flex;
+  font-size: 0.8125rem;
+}
+.foot-5-p1 p {
+  padding: 0 1em 0 1em;
+
+  margin: 0;
+}
+.line {
+  border-right: 1px solid #b7b7b7;
+  height: 1.6em;
+  margin-top: -0.3em;
+}
+.no-pad {
+  padding-left: 0 !important;
+}
+.foot-5-p2 img {
+  opacity: 0.7;
+  height: 10px;
+}
+.foot-5-p2 img:hover {
+  cursor: auto;
+}
+.foot-5-p2 p {
+  color: #333c;
+  font-size: 0.8125rem;
+  margin-top: 10px;
+}
+.foot-5-p2 :nth-child(2) {
+  margin-top: -6px;
+}
+.foot-5-p2 :nth-child(1):hover {
+  cursor: auto;
+}

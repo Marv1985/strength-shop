@@ -1,0 +1,60 @@
+.footer-p4-wrapper {
+  flex-basis: 17%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 1.25em;
+  padding-right: 1.25em;
+}
+
+.footer-p4-wrapper h2 {
+  font-size: var(--font-size-heading-5);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  font-family: "Arimo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0;
+}
+.subscribe {
+  padding: 0.375em;
+  width: 19.3em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.subscribe div {
+  display: flex;
+}
+.subscribe .in {
+  border: 1px solid #ccc;
+  padding: 0.67em;
+  background-color: #fff;
+  font-size: 12px;
+  width: 94%;
+  border-radius: 0px;
+  font-family: arial, helvetica, sans-serif;
+}
+.subscribe p {
+  margin-left: 0.2rem;
+  color: #333333;
+  font-size: 12px;
+  vertical-align: middle;
+}
+.subscribe button {
+  border: 0px;
+  color: #fff;
+  background-color: #94140a;
+  outline: none;
+  white-space: normal;
+  padding: 13px 10px;
+  margin: 5px 0px 0px;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 4px;
+  font-family: "Cabin", sans-serif;
+}
+
+.subscribe button:hover {
+  cursor: pointer;
+}

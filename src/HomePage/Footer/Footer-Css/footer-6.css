@@ -1,0 +1,69 @@
+.footer-p6-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.foot-p6-img {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  height: 1.8em;
+  width: 2.5em;
+  margin-top: 0.27em;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  overflow: hidden;
+}
+.footer-p6-wrapper img {
+  padding-right: 0.8em;
+  height: 2.5em;
+  width: 2.5em;
+}
+.footer-p6-wrapper img:nth-child(2) {
+  height: 2.65em;
+  width: 2.65em;
+  margin-top: -0.1em;
+}
+.foot-p6-img img {
+  height: 2em;
+  width: 2em;
+  margin-left: 0.75em;
+  margin-top: -0.06em;
+}
+
+.maestro {
+  height: 4em !important;
+  width: 4em !important;
+  margin-top: -0.9em;
+}
+.mastercard {
+  margin-top: -0.1em;
+  margin-left: -0.7em;
+}
+.paypal {
+  height: 1.1em !important;
+  width: 1.1em !important;
+  margin-top: 0.35em !important;
+}
+.shoppay {
+  height: 1.8em !important;
+  width: 2.7em !important;
+  margin-left: 0.8em;
+  margin-top: 0.28em;
+  padding-right: 0 !important;
+}
+.visa {
+  height: 2em;
+  width: 2em;
+}
+.visa {
+  margin-right: 0.7em;
+}
+.foot6-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
