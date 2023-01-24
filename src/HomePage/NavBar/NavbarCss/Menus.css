@@ -1,3 +1,42 @@
+.fullscreen {
+  visibility: visible;
+  animation: fadein1 500ms;
+  opacity: 1;
+  position: absolute !important;
+  left: -22%;
+  background: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+  width: 500em !important;
+  top: 100%;
+  -webkit-animation: fadein1 500ms;
+}
+
+.fullscreen-none {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 500ms;
+  transition-delay: 500ms !important;
+  position: absolute !important;
+  left: -22%;
+  background: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+  width: 500em !important;
+  top: 100%;
+  -webkit-transition: visibility 0s linear 500ms;
+  -moz-transition: visibility 0s linear 500ms;
+  -ms-transition: visibility 0s linear 500ms;
+  -o-transition: visibility 0s linear 500ms;
+}
+
+@keyframes fadein1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .menus {
   padding-top: 0.1em;
   display: flex;
@@ -171,7 +210,7 @@ details a {
 /* dropdown placement */
 .dropdown1 {
   z-index: 3;
-  margin-top: 0.02em;
+  margin-top: 0em;
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 14.7em;
@@ -179,7 +218,7 @@ details a {
 }
 .dropdown2 {
   z-index: 3;
-  margin-top: 0.02em;
+  margin-top: 0em;
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 15em;
@@ -187,7 +226,7 @@ details a {
 }
 .dropdown3 {
   z-index: 3;
-  margin-top: 0.02em;
+  margin-top: 0em;
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 15em;
@@ -195,7 +234,7 @@ details a {
 }
 .dropdown4 {
   z-index: 3;
-  margin-top: 0.02em;
+  margin-top: 0em;
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 14.7em;
@@ -203,7 +242,7 @@ details a {
 }
 .dropdown5 {
   z-index: 3;
-  margin-top: 0.02em;
+  margin-top: 0em;
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 14.7em;
@@ -211,7 +250,7 @@ details a {
 }
 .dropdown6 {
   z-index: 3;
-  margin-top: 0.02em;
+  margin-top: 0em;
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 14.7em;
@@ -238,13 +277,6 @@ details a {
     -moz-transform: scaleY(0);
     -ms-transform: scaleY(0);
     -o-transform: scaleY(0);
-  }
-  50% {
-    transform: scaleY(0.5);
-    -webkit-transform: scaleY(0.5);
-    -moz-transform: scaleY(0.5);
-    -ms-transform: scaleY(0.5);
-    -o-transform: scaleY(0.5);
   }
   100% {
     transform: scaleY(1);

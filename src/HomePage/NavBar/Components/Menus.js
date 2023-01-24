@@ -212,6 +212,55 @@ export default function Menus() {
     }
   }, []);
 
+  /* full screen overlay */
+  const [fully, setFully] = useState(false);
+
+  useEffect(() => {
+    const node = ref.current;
+    const node2 = ref2.current;
+    const node3 = ref3.current;
+    const node4 = ref4.current;
+    const node5 = ref5.current;
+    const node6 = ref6.current;
+
+    function func() {
+      setFully(false);
+    }
+
+    function func2() {
+      setFully(true);
+    }
+    if (node || node2 || node3 || node4 || node5 || node6) {
+      node.addEventListener("mouseenter", func2);
+      node.addEventListener("mouseleave", func);
+      node2.addEventListener("mouseenter", func2);
+      node2.addEventListener("mouseleave", func);
+      node3.addEventListener("mouseenter", func2);
+      node3.addEventListener("mouseleave", func);
+      node4.addEventListener("mouseenter", func2);
+      node4.addEventListener("mouseleave", func);
+      node5.addEventListener("mouseenter", func2);
+      node5.addEventListener("mouseleave", func);
+      node6.addEventListener("mouseenter", func2);
+      node6.addEventListener("mouseleave", func);
+
+      return () => {
+        node.addEventListener("mouseenter", func2);
+        node.addEventListener("mouseleave", func);
+        node2.addEventListener("mouseenter", func2);
+        node2.addEventListener("mouseleave", func);
+        node3.addEventListener("mouseenter", func2);
+        node3.addEventListener("mouseleave", func);
+        node4.addEventListener("mouseenter", func2);
+        node4.addEventListener("mouseleave", func);
+        node5.addEventListener("mouseenter", func2);
+        node5.addEventListener("mouseleave", func);
+        node6.addEventListener("mouseenter", func2);
+        node6.addEventListener("mouseleave", func);
+      };
+    }
+  }, [fully]);
+
   /* rendered */
   return (
     <div className="menus shade">
@@ -444,6 +493,7 @@ export default function Menus() {
           </li>
         </ul>
       </details>
+      <div className={fully ? "fullscreen" : "fullscreen-none"}></div>
     </div>
   );
 }
