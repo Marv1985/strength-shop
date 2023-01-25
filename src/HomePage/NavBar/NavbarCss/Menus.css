@@ -14,18 +14,21 @@
 .fullscreen-none {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s linear 500ms;
-  transition-delay: 500ms !important;
   position: absolute !important;
   left: -22%;
   background: rgba(0, 0, 0, 0.4);
   height: 100vh;
   width: 500em !important;
   top: 100%;
-  -webkit-transition: visibility 0s linear 500ms;
-  -moz-transition: visibility 0s linear 500ms;
-  -ms-transition: visibility 0s linear 500ms;
-  -o-transition: visibility 0s linear 500ms;
+  animation: fadeout1 200ms linear forwards;
+  -webkit-animation: fadeout1 200ms linear forwards;
+  transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition-delay: 500ms;
+  animation-delay: 500ms;
 }
 
 @keyframes fadein1 {
@@ -34,6 +37,14 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes fadeout1 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
