@@ -38,6 +38,7 @@ hr {
   border: solid black;
   border-width: 0 0.14rem 0.14rem 0;
   padding: 3px;
+  margin-left: -1em;
 }
 
 .down-width2 {

@@ -77,7 +77,7 @@ export default function ReviewsCarousel() {
   function left2() {
     //console.log(index)
     if (index > 0) {
-      console.log(index);
+      // console.log(index);
       setIndex((prevIndex) => prevIndex - 0.55);
     }
     if (index < 0.3) {
@@ -88,7 +88,7 @@ export default function ReviewsCarousel() {
   function right2() {
     //console.log(index)
     if (index <= 4) {
-      console.log(index);
+      // console.log(index);
       setIndex((prevIndex) => prevIndex + 0.55);
     }
     if (index > 3.4) {
@@ -110,16 +110,18 @@ export default function ReviewsCarousel() {
 
   useEffect(() => {
     resetTimeout();
+    // console.log(index)
     timeoutRef.current = setTimeout(() => {
       if (auto) {
         setIndex((prevIndex) => prevIndex + 0.25);
       }
+      if (index >= 2.8) {
+        setIndex(0);
+      }
       if (widthMenu < 990) {
         setIndex((prevIndex) => prevIndex + 0.305);
       }
-      if (index >= 3.37) {
-        setIndex(0);
-      }
+      
     }, 5000);
     return () => resetTimeout();
   });

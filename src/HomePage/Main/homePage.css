@@ -13,6 +13,13 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
+/* rules to prevent horizontal scrolling */
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
 
 :root {
   --jdgm-primary-color: #94140a;
